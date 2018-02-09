@@ -1,0 +1,16 @@
+{
+  "name": "cynergie",
+  "version": "1.0.0",
+  "description": "Website cynergie",
+  "main": "index.js",
+  "scripts": {
+    "sass": "./node_modules/.bin/node-sass css/*.scss css/styles.css",
+    "watch": "./node_modules/.bin/node-sass --watch css/*.scss css/styles.css"
+  },
+  "author": "Cedille ~ Akram",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "node-sass": "^4.7.2"
+  }
+}
