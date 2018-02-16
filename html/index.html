@@ -62,9 +62,6 @@
   <section class ="hero">
     <div class="intro column is-8 is-offset-2">
       <div class="content has-text-centered">
-        <h1 class="title">
-            Le projet
-        </h1>
         <p>Çynergie a pour but de fournir une interface de visualisation en temps réel de la consommation des ressources énergétiques de l'École de technologie supérieure(ETS). Cela peut inclure la consommation d'eau, d'électricité, de gas, etc.</p></div>
         </div>
       </section>
@@ -74,27 +71,27 @@
             <div class="columns features">
               <div class="column is-6 gap">
                 <div class="content center">
-                    <h3 class="title">Technologies utilisées</h3>
-                    <h4 class="title">Prometheus</h4>
+                    <h3 class="title">Prometheus</h3>
                   <p class="has-text-white">
-                      La plateforme open-source Prometheus est utilisée afin de conserver une base de données historiques à des fins d'analyse sur une plus longue période.
+                      La plateforme open-source
+                      <a href="https://prometheus.io/">
+                          Prometheus
+                      </a>
+                      est utilisée afin de conserver une base de données historiques à des fins d'analyse sur une plus longue période et pour
+                      collecter les données lues et formattées par l'adapteur.
                   </p>
-                  <h4 class="title">Grafana</h4>
-
-                  <p class="has-text-white">
-                      Nous utilisons Grafana afin de présenter les données que l'on va chercher dans Prometheus.
-                  </p>
+                  
                 </div>
               </div>
               <div class="column is-6">
                 <div class=" modal">
                   <div class="modal-background"></div>
                   <div class="modal-content ">
-                    <img src="../img/cynergie-logo-black.png" alt="Image cynergie">
+                    <img src="../img/prometheus_logo.png" alt="Image cynergie">
                     <button class="modal-close is-large" aria-label="close"></button>
                   </div>
                 </div>
-                <img src="../img/cynergie-logo-black.png" alt="">
+                <img src="../img/prometheus_logo.png" alt="" class="open-modal" data-modal-id="#my-modal" width="400" height="400">
               </div>
             </div>
           </div>
@@ -107,18 +104,19 @@
               <div class=" modal">
                 <div class="modal-background"></div>
                 <div class="modal-content ">
-                  <img src="../img/cynergie-logo-black.png" alt="Image cynergie">
+                    <img src="grafana_logo.jpg" alt="Image cynergie">
                   <button class="modal-close is-large" aria-label="close"></button>
                 </div>
               </div>
-              <img src="../img/cynergie-logo-black.png" alt="">
+              <img src="../img/grafana_logo.jpg" alt="" class="open-modal" data-modal-id="#my-modal">
             </div>
             <div class="column is-6 gap">
               <div class="content center">
-                <h4 class="title "></h4>
-                <p class="">
-                  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur    </p>
-                </p>
+                <h3 class="title">Grafana</h3>
+                <p class="has-text-blue">
+                    Nous utilisons
+                    <a href="https://grafana.com/">Grafana</a>
+                    afin de gérer l'aspect présentation des données à l'utilisateur en temps réel. C'est le lien entre l'utilisateur et la base de données                    </p>
               </div>
             </div>
           </div>
