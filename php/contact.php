@@ -5,7 +5,7 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 $subject = $_POST['subject'];
 $from = 'From: Cynergie Website';
-$to = 'akram-mo@hotmail.com';
+$to = 'djalilolimited@live.ca';
 
 $body = "From: $name\n E-mail: $email \n Phone: $phone \n Subject:
 $subject \n Message: $message";

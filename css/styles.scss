@@ -2,7 +2,7 @@
 
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
-$cynergie : linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+$cynergie : linear-gradient(to right, #1f8b31, #064d21); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 
@@ -33,3 +33,23 @@ $cynergie : linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, F
   -ms-filter: “FlipH”;
 
 }
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+#container2 {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+#container3 {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+
