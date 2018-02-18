@@ -8,14 +8,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
         <link rel="stylesheet" href="../css/styles.css">
         <link rel='shortcut icon' href='http://cedille.etsmtl.ca/favicon.ico' type='image/x-icon'/ >
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-        <script src="../js/jsmodal.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+        
     </head>
     <body>
 
-        <section class="hero is-info is-medium  mongrad">
+        <section class="hero is-primary is-medium  mongrad">
             <div class="hero-head">
-                <nav class="navbar ">
+                <nav class="navbar  ">
                     <div class="container">
                         <div class="navbar-brand">
                             <a class="navbar-item" href="../html/index.html">
@@ -62,7 +65,7 @@
         <section class ="section">
             <div class="intro column is-8 is-offset-2">
                 <div class="content has-text-centered">
-                    <p>Çynergie a pour but de fournir une interface de visualisation en temps réel de la consommation des ressources énergétiques de l'École de technologie supérieure(ETS). Cela peut inclure la consommation d'eau, d'électricité, de gas, etc.</p></div>
+                    <h3>Çynergie a pour but de fournir une interface de visualisation en temps réel de la consommation des ressources énergétiques de l'École de technologie supérieure(ETS). Cela peut inclure la consommation d'eau, d'électricité, de gas, etc.</h3></div>
             </div>
             <div class="tile is-ancestor">
                 <div class="tile is-4 is-parent">
@@ -76,7 +79,9 @@
 
                                 At ultricies augue semper parturient metus auctor urna sapien magnis non, molestie natoque nisi nunc quam et primis libero sagittis, euismod odio rutrum orci cursus imperdiet risus fames class. Nascetur laoreet venenatis odio donec luctus, quis imperdiet maecenas hac ac tincidunt, duis mi eros nisi. Class enim sapien nam malesuada cras, blandit volutpat in inceptos nascetur vivamus, pretium viverra himenaeos venenatis.
                             </p>
+                            <div  id="container"></div>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="tile is-4 is-parent">
@@ -89,6 +94,8 @@
 
                             At ultricies augue semper parturient metus auctor urna sapien magnis non, molestie natoque nisi nunc quam et primis libero sagittis, euismod odio rutrum orci cursus imperdiet risus fames class. Nascetur laoreet venenatis odio donec luctus, quis imperdiet maecenas hac ac tincidunt, duis mi eros nisi. Class enim sapien nam malesuada cras, blandit volutpat in inceptos nascetur vivamus, pretium viverra himenaeos venenatis.
                         </p>
+                        <div id="container2"></div>
+                        
                     </div>
                 </div>
                 <div class="tile is-4 is-parent">
@@ -101,10 +108,13 @@
 
                             At ultricies augue semper parturient metus auctor urna sapien magnis non, molestie natoque nisi nunc quam et primis libero sagittis, euismod odio rutrum orci cursus imperdiet risus fames class. Nascetur laoreet venenatis odio donec luctus, quis imperdiet maecenas hac ac tincidunt, duis mi eros nisi. Class enim sapien nam malesuada cras, blandit volutpat in inceptos nascetur vivamus, pretium viverra himenaeos venenatis.
                         </p>
+                        <div  id="container3"></div>
                     </div>
+                    
                 </div>
+                
             </div>
-            
+               
         </section>
         <div class="mongrad">
             <section class="section">
@@ -112,28 +122,28 @@
                     <div class="columns">
                         <div class="column">
                             <div class="content">
-                                <h1>Projet de maitrîse</h1>
-                                <p>
+                                <h1 class="has-text-white">Projet de maitrîse</h1>
+                                <p class="has-text-white">
                                     À terme, il sera possible de télécharger les données pour une certaine période sous différents formats, CSV, par exemple sjadkfhadsjlfhdsjfhsdkjlfhsdkjfhsjdkfhdsklllllllllllllllllllllsdddddddddddddddfkjfhsdkjfhsd
                                 </p>
-                                <h2>Prometheus</h2>
-                                <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
-                                <h2>Grafana</h2>
-                                <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus. Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.</p>
-                                <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
+                                <h2 class="has-text-white">Prometheus</h2>
+                                <p class="has-text-white">Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+                                <h2 class="has-text-white">Grafana</h2>
+                                <p class="has-text-white">Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus. Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.</p>
+                                <p class="has-text-white"> Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
                                 <figure>
                                     <a href="https://prometheus.io">
-                                    <img src="../img/prometheus_logo.png" height="256" width="256">
+                                    <img src="../img/prometheus_logo.png" height="150" width="150">
                                     </a>
                                     <a href="https://grafana.com">
-                                    <img src="../img/grafana_logo.jpg" height="256" width="256">
+                                    <img src="../img/grafana_logo.jpg" height="150" width="150">
                                     </a>
                                     <figcaption>
                                         Figure 1: À gauche, le logo de prometheus tandis qu'à droite, celui de grafana.
                                     </figcaption>
                                 </figure>
-                                <h6>Sixth level</h6>
-                                <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
+                                <h6 class="has-text-white" >Sixth level</h6>
+                                <p class="has-text-white">Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
                             </div>
                         </div>
                     </div>"
@@ -185,6 +195,9 @@
                     </div>
                     <div class="column">
                         <div class="content center">
+                                <a href="https://www.bnc.ca/">
+                                    <img src="../img/bnc.jpg" height="400" width="400">
+                                </a>
                         </div>
                     </div>
                 </div>
