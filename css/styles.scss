@@ -14,6 +14,14 @@ $technologie : linear-gradient(to right, #e6522c, #d8694d);
   padding-left: 400px;
   padding-right: 400px;
 }
+.tech{
+  background-color: #ffffff;
+  text-align: left;
+  color:rgb(0, 0, 0);
+  font-family: Lato, sans-serif;
+  margin-bottom: 0px;
+  padding: 10px 0;
+}
 
 .prometheus{
   background: $technologie;
@@ -21,7 +29,7 @@ $technologie : linear-gradient(to right, #e6522c, #d8694d);
   text-align: left;
   font-family: Lato, sans-serif;
   margin-bottom: 0px;
-  padding: 40px 0
+  padding: 5px 0
 }
 .grafana{
   background-image:url("../img/grafana.png");
@@ -29,7 +37,7 @@ $technologie : linear-gradient(to right, #e6522c, #d8694d);
   color:white;
   font-family: Lato, sans-serif;
   margin-bottom: 0px;
-  padding: 40px 0
+  padding: 10px 0;
 
 }
 .mongrad {

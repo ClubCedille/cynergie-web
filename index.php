@@ -8,14 +8,14 @@
     <title>Cynergie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel='shortcut icon' href='http://cedille.etsmtl.ca/favicon.ico' type='image/x-icon' />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
-    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
             <nav class="navbar  ">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item" href="../html/index.html">
-                            <img src="../img/cynergie-logo-white.png" class="" alt="Logo">
+                        <a class="navbar-item" href="#">
+                            <img src="img/cynergie-logo-white.png" class="" alt="Logo">
                         </a>
                         <span class="navbar-burger burger" data-target="navbarMenu">
                             <span></span>
@@ -35,10 +35,10 @@
                     </div>
                     <div id="navbarMenu" class="navbar-menu">
                         <div class="navbar-end">
-                            <a href="index.html" class="navbar-item is-active">
+                            <a href="index.php" class="navbar-item is-active">
                                 Projet
                             </a>
-                            <a class="navbar-item" href="contact.html">
+                            <a class="navbar-item" href="html/contact.html">
                                 Contact
                             </a>
                             <span class="navbar-item">
@@ -81,15 +81,14 @@
                             Temps réel
                         </p>
                         <p class="content center">
-                            Lorem ipsum dolor sit amet consectetur, adipiscing elit quis dignissim. Eu libero suspendisse sed risus rutrum taciti, ultrices
-                            nibh porta mauris maecenas fringilla cursus, est dictum litora nam nascetur. Ad habitasse felis
-                            posuere lobortis auctor accumsan interdum per, cubilia leo suspendisse magna molestie fermentum
-                            nisl, vel fringilla risus tristique vulputate ultricies lacus. At ultricies augue semper parturient
-                            metus auctor urna sapien magnis non, molestie natoque nisi nunc quam et primis libero sagittis,
-                            euismod odio rutrum orci cursus imperdiet risus fames class. Nascetur laoreet venenatis odio
-                            donec luctus, quis imperdiet maecenas hac ac tincidunt, duis mi eros nisi. Class enim sapien
-                            nam malesuada cras, blandit volutpat in inceptos nascetur vivamus, pretium viverra himenaeos
-                            venenatis.
+                            Recuperer les donnees de la consommation energetique de l Ets en temps reel a partir des controleurs connectes aux reseaux.
+                            Ainsi, on peut recuperer les donnes de la consommation electrique ,d eau, et de gas des differents
+                            batiement de L'École de technologie supérieure. la recuperation des donnees sera fait de facon
+                            efficace pour que celles-ci peuvent etre fiable et donc utiliser par les etudiants ou les professeurs
+                            pour de la recherche ou autres .
+                            <br>
+                            <br>
+
                         </p>
                         <div id="container"></div>
                     </div>
@@ -99,17 +98,14 @@
             <div class="tile is-4 is-parent">
                 <div class="tile is-child box">
                     <p class="title">
-                        Graphiques
+                        Graphiques et tableaux
                     </p>
                     <p class="content center">
-                        Lorem ipsum dolor sit amet consectetur, adipiscing elit quis dignissim. Eu libero suspendisse sed risus rutrum taciti, ultrices
-                        nibh porta mauris maecenas fringilla cursus, est dictum litora nam nascetur. Ad habitasse felis posuere
-                        lobortis auctor accumsan interdum per, cubilia leo suspendisse magna molestie fermentum nisl, vel
-                        fringilla risus tristique vulputate ultricies lacus. At ultricies augue semper parturient metus auctor
-                        urna sapien magnis non, molestie natoque nisi nunc quam et primis libero sagittis, euismod odio rutrum
-                        orci cursus imperdiet risus fames class. Nascetur laoreet venenatis odio donec luctus, quis imperdiet
-                        maecenas hac ac tincidunt, duis mi eros nisi. Class enim sapien nam malesuada cras, blandit volutpat
-                        in inceptos nascetur vivamus, pretium viverra himenaeos venenatis.
+                        Un premier portail est disponible pour la visualisation des donnees a l aide de graphiques et de tableaux. cette platforme
+                        se nomant Grafana est utilise par plusieurs professionnels pour le monitorage de systeme, pour le
+                        projet Cynergie elle sera utilise pour afficher des graphiques et des tableaux qui illustre la consommation
+                        d energie des differents modules de L'École de technologie supérieure. Pour moment le portail grafana
+                        sera accessible avec une authentification unique pour des raisons de securite.
                     </p>
                     <div id="container2"></div>
 
@@ -118,25 +114,21 @@
             <div class="tile is-4 is-parent">
                 <div class="tile is-child box">
                     <p class="title">
-                        Portail
+                        Portail et API
                     </p>
                     <p class="content center">
-                        Lorem ipsum dolor sit amet consectetur, adipiscing elit quis dignissim. Eu libero suspendisse sed risus rutrum taciti, ultrices
-                        nibh porta mauris maecenas fringilla cursus, est dictum litora nam nascetur. Ad habitasse felis posuere
-                        lobortis auctor accumsan interdum per, cubilia leo suspendisse magna molestie fermentum nisl, vel
-                        fringilla risus tristique vulputate ultricies lacus. At ultricies augue semper parturient metus auctor
-                        urna sapien magnis non, molestie natoque nisi nunc quam et primis libero sagittis, euismod odio rutrum
-                        orci cursus imperdiet risus fames class. Nascetur laoreet venenatis odio donec luctus, quis imperdiet
-                        maecenas hac ac tincidunt, duis mi eros nisi. Class enim sapien nam malesuada cras, blandit volutpat
-                        in inceptos nascetur vivamus, pretium viverra himenaeos venenatis.
+                        Un deuxieme portail Cynergie sera implemente pour permettre aux etudiants ou professeurs de telecharger facilement les donnees
+                        dynamiquement et les exporter en des fichiers CSV ou JSON ,il peut aussi offrir des infomations suplementaires
+                        sur les donnes disponibles. De plus une API sera disponible pour faciliter l acces aux donnees et
+                        permettre a l utilisateur de les exploiter quelques soit le logiciel qu il utilise.
+                        <br>
+                        <br>
+
                     </p>
                     <div id="container3"></div>
                 </div>
-
             </div>
-
         </div>
-
     </section>
     <div class="mongrad">
         <section class="section">
@@ -157,9 +149,7 @@
                                 de deux manières différentes. En tant que flux de données en temps réel ou par lots afin
                                 d’accéder à des données historiques.*
                             </p>
-                            <figcaption>
-                                * https://
-                            </figcaption>
+
 
                             <h3 class="has-text-white">Objectifs : </h3>
                             <p class="has-text-white">
@@ -169,17 +159,69 @@
                                 en proposant de centraliser un maximum de sources de données différentes et de les distribuer
                                 ensuite dans des formats standards et documentés.*
                             </p>
+                            <h3 class="has-text-white">Architecture du project Cynergie : </h3>
+                            <img src="img/plateform_generic-page-001.jpg">
+                            <figcaption>
+                                * Conception d’un portefeuille de projets exploitant les technologies de l’Internet des Objets pour la gestion des bâtiments
+                                de l’ÉTS par Gautier COLAJANNI
+                            </figcaption>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <div class="mongrad">
+    <div class="tech">
         <section class="section">
-            <div class="container has-text-centered">
+            <div class="container ">
                 <div class="content ">
-                    <h1 class="has-text-white">Les technologies utilisées : </h1>
+                    <h1>Les technologies utilisées : </h1>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-one-fifth">
+                </div>
+                <div class="column">
+                    <a href="https://www.typescriptlang.org/">
+                        <img src="img/TypeScript.png" height="200" width="200">
+                    </a>
+                    <br>
+                    <a href="https://nodejs.org/en/">
+                        <img src="img/nodejs.png" height="200" width="200">
+                    </a>
+                </div>
+                <div class="column">
+                    <h3>
+                        <br>
+                        <br> ces langages sont utiliser pour implementer l adpateur qui permet de recuperer les donnees en temps
+                        reeel et les exposer a la base a la database prometheus.
+                    </h3>
+                </div>
+                <div class="column is-one-fifth">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="tech">
+        <section class="section">
+            <div class="columns">
+                <div class="column is-one-fifth">
+                </div>
+                <div class="column">
+                    <a href="http://searchmicroservices.techtarget.com/definition/RESTful-API">
+                        <img src="https://www.odoo.com/apps/icon_image?module_id=19345" height="200" width="200">
+                    </a>
+                </div>
+                <div class="column">
+                    <h3>
+                        <br>
+                        <br> Ce type d API sera utilise pour faciliter l acces aux donnees de facon efficace et securitaire.
+                    </h3>
+                </div>
+                <div class="column is-one-fifth">
                 </div>
             </div>
         </section>
@@ -205,11 +247,12 @@
                     </div>
 
                     <p class="has-text-white">
-                            Prometheus c'est un outils de monitorage et d'alerte de systèmes Open Source, 
-                            créée à l'origine sur SoundCloud. Depuis sa création en 2012, de nombreuses entreprises et organisations ont adopté Prometheus, 
-                            et le projet a une communauté de développeurs et d'utilisateurs très active. C'est maintenant un projet Open Source autonome et
-                             maintenu indépendamment de toute entreprise. Pour souligner cela, et pour clarifier la structure de gouvernance du projet, 
-                             Prometheus a rejoint la Cloud Native Computing Foundation en 2016 en tant que deuxième projet hébergé, après Kubernetes.
+                        Prometheus c'est un outils de monitorage et d'alerte de systèmes Open Source, créée à l'origine sur SoundCloud. Depuis sa
+                        création en 2012, de nombreuses entreprises et organisations ont adopté Prometheus, et le projet
+                        a une communauté de développeurs et d'utilisateurs très active. C'est maintenant un projet Open Source
+                        autonome et maintenu indépendamment de toute entreprise. Pour souligner cela, et pour clarifier la
+                        structure de gouvernance du projet, Prometheus a rejoint la Cloud Native Computing Foundation en
+                        2016 en tant que deuxième projet hébergé, après Kubernetes.
                     </p>
 
                 </div>
@@ -230,7 +273,7 @@
                 <div class="column ">
 
                     <a href="https://grafana.com/">
-                        <img src="../img/grafana_logo.jpg" height="200" width="200">
+                        <img src="img/grafana_logo.jpg" height="200" width="200">
                     </a>
                 </div>
                 <div class="column ">
@@ -238,10 +281,9 @@
                     <div class="content ">
                         <h3 class="has-text-white">Grafana</h3>
                     </div>
-
-                    Grafana est le logiciel de facto pour l'analyse des séries temporelles, avec plus de 100 000 installations actives.
-                     Les clients se tournent vers Grafana Labs pour rassembler leurs sources de données disparates, via des logiciels neutres et open source.
-
+                    Grafana est le logiciel de facto pour l'analyse des séries temporelles, avec plus de 100 000 installations actives. Les clients
+                    se tournent vers Grafana Labs pour rassembler leurs sources de données disparates, via des logiciels
+                    neutres et open source.
                 </div>
                 <div class="column is-one-fifth">
                 </div>
@@ -259,7 +301,7 @@
                     <div class="content center">
 
                         <a href="https://etsmtl.ca">
-                            <img src="../img/ets_logo.png" height="200" width="200">
+                            <img src="img/ets_logo.png" height="200" width="200">
                         </a>
                     </div>
                 </div>
@@ -267,14 +309,14 @@
                     <div class="content center">
 
                         <a href="https://cedille.etsmtl.ca">
-                            <img src="../img/Logo_Text & CEDILLE.png" height="200" width="200">
+                            <img src="img/Logo_Text & CEDILLE.png" height="200" width="200">
                         </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="content center">
                         <a href="https://www.bnc.ca/">
-                            <img src="../img/bnc.jpg" height="400" width="400">
+                            <img src="img/bnc.jpg" height="400" width="400">
                         </a>
                     </div>
                 </div>
@@ -292,7 +334,7 @@
                         <a class="button is-link is-outlined" href="https://www.facebook.com/clubcedille">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="button is-link is-outlined" href="../html/contact.html">
+                        <a class="button is-link is-outlined" href="html/contact.html">
                             <i class="far fa-envelope"></i>
                         </a>
                         <a class="button is-link is-outlined" href="https://github.com/ClubCedille?utf8=%E2%9C%93&q=cynergie&type=&language=">
