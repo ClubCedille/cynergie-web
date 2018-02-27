@@ -37,7 +37,7 @@
                             <a href="index.php" class="navbar-item is-active">
                                 Projet
                             </a>
-                            <a class="navbar-item" href="html/contact.html">
+                            <a class="navbar-item" href="php/contact.php">
                                 Contact
                             </a>
                             <span class="navbar-item">
@@ -333,7 +333,7 @@
                         <a class="button is-link is-outlined" href="https://www.facebook.com/clubcedille">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="button is-link is-outlined" href="html/contact.html">
+                        <a class="button is-link is-outlined" href="php/contact.php">
                             <i class="far fa-envelope"></i>
                         </a>
                         <a class="button is-link is-outlined" href="https://github.com/ClubCedille?utf8=%E2%9C%93&q=cynergie&type=&language=">
