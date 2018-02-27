@@ -6510,6 +6510,30 @@ label.panel-block {
   padding-left: 400px;
   padding-right: 400px; }
 
+.tech {
+  background-color: #ffffff;
+  text-align: left;
+  color: black;
+  font-family: Lato, sans-serif;
+  margin-bottom: 0px;
+  padding: 10px 0; }
+
+.prometheus {
+  background: linear-gradient(to right, #e6522c, #d8694d);
+  background-color: #e6522c;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  margin-bottom: 0px;
+  padding: 10px 0; }
+
+.grafana {
+  background-image: url("../img/grafana.png");
+  text-align: left;
+  color: white;
+  font-family: Lato, sans-serif;
+  margin-bottom: 0px;
+  padding: 10px 0; }
+
 .mongrad {
   background: linear-gradient(to right, #1f8b31, #064d21); }
 
