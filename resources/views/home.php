@@ -23,7 +23,7 @@
             <nav class="navbar  ">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item" href="#">
+                        <a class="navbar-item" href="/">
                             <img src="img/cynergie-logo-white.png" class="" alt="Logo">
                         </a>
                         <span class="navbar-burger burger" data-target="navbarMenu">
@@ -34,10 +34,10 @@
                     </div>
                     <div id="navbarMenu" class="navbar-menu">
                         <div class="navbar-end">
-                            <a href="index.php" class="navbar-item is-active">
+                            <a href="#" class="navbar-item is-active">
                                 Projet
                             </a>
-                            <a class="navbar-item" href="php/contact.php">
+                            <a class="navbar-item" href="contact">
                                 Contact
                             </a>
                             <span class="navbar-item">
@@ -333,7 +333,7 @@
                         <a class="button is-link is-outlined" href="https://www.facebook.com/clubcedille">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="button is-link is-outlined" href="php/contact.php">
+                        <a class="button is-link is-outlined" href="#">
                             <i class="far fa-envelope"></i>
                         </a>
                         <a class="button is-link is-outlined" href="https://github.com/ClubCedille?utf8=%E2%9C%93&q=cynergie&type=&language=">

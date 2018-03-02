@@ -7,7 +7,7 @@
     "sass": "./node_modules/.bin/node-sass css/*.scss css/styles.css",
     "watch": "./node_modules/.bin/node-sass --watch css/*.scss css/styles.css"
   },
-  "author": "Cedille ~ Akram ",
+  "author": "Cedille ~ Akram ~ Jalil ",
   "license": "MIT",
   "dependencies": {
     "bulma": "^0.6.2",

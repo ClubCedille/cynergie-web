@@ -1,31 +1,3 @@
-<?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
-$subject = $_POST['subject'];
-$from = 'Cynergie Website';
-$to = 'jalilbengoufa@gmail.com';
-
-$body = "From: $name\n E-mail: $email \n Phone: $phone \n Subject:
-        $subject \n Message: $message";
-
-
-if(isset($_POST['submit'])){
-
-  if($name != "" || $email != "" || $subject != "" || $message != ""){
-
-      //mail( $to, $subject, $body, $from);  spamm gang 
-      $msg = "message envoye ...";
-
-  }else{
-
-      $msg = " Des champs sont requis !";
-
-  }
-
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,15 +6,10 @@ if(isset($_POST['submit'])){
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel='shortcut icon' href="../img/cynergie-logo-white.ico" type='image/x-icon'/ >
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel='shortcut icon' href="img/cynergie-logo-white.ico" type='image/x-icon'/ >
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="../js/jsmodal.js"></script>
-  <script>
-    function setHeight() {
-      parent.document.getElementById('the-iframe-id').style.height = document['body'].offsetHeight + 'px';
-  }
-  </script>
+ 
 </head>
 <body>
 
@@ -51,8 +18,8 @@ if(isset($_POST['submit'])){
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item" href="../index.php">
-              <img src="../img/cynergie-logo-white.png" class="" alt="Logo">
+            <a class="navbar-item" href="/">
+              <img src="img/cynergie-logo-white.png" class="" alt="Logo">
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
               <span></span>
@@ -62,10 +29,10 @@ if(isset($_POST['submit'])){
           </div>
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
-              <a href="../index.php" class="navbar-item ">
+              <a href="/" class="navbar-item ">
                 Projet
               </a>
-              <a class="navbar-item is-active" href = "#">
+              <a class="navbar-item is-active" href = "contact">
                 Contact
               </a>
               <span class="navbar-item">
@@ -84,7 +51,6 @@ if(isset($_POST['submit'])){
   </section>
   <section class="section is-medium ">
     <div class="container  ">
-      <td colspan="2" align="center" class="error" ><?php echo $msg;?></td>
       <div class="form-width">
         <form id="contactus" enctype="multipart/form-data"  method="post" >
           <div class="field">
@@ -171,5 +137,4 @@ if(isset($_POST['submit'])){
     </div>
 </footer>
 </body>
-
 </html>
