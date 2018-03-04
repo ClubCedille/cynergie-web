@@ -4,7 +4,7 @@
   "description": "Website cynergie",
   "main": "index.js",
   "scripts": {
-    "sass": "./node_modules/.bin/node-sass css/*.scss css/styles.css",
+    "sass": "./node_modules/.bin/node-sass public/css/*.scss  public/css/styles.css",
     "watch": "./node_modules/.bin/node-sass --watch css/*.scss css/styles.css"
   },
   "author": "Cedille ~ Akram ~ Jalil ",

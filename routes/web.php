@@ -11,7 +11,19 @@
 |
 */
 
-$router->get('/', function () use ($router) {
+
+
+$router->get('/','HomeController@getHome');
+
+//named route 
+$router->get('contact', [
+    'as' => 'contact', 'uses' => 'ContactController@getContact'
+]);
+
+
+
+
+/*$router->get('/', function () use ($router) {
 
 	if(view()->exists('home')){
 
@@ -21,9 +33,10 @@ $router->get('/', function () use ($router) {
 
 	return "page home not found";
 	 
-});
+});*/
 
-$router->get('contact', function () use ($router) {
+
+/*$router->get('contact', function () use ($router) {
 
 	if(view()->exists('contact')){
 
@@ -33,4 +46,4 @@ $router->get('contact', function () use ($router) {
 
 	return "page contact not found";
 	 
-});
+});*/

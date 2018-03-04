@@ -6524,7 +6524,7 @@ label.panel-block {
   text-align: left;
   font-family: Lato, sans-serif;
   margin-bottom: 0px;
-  padding: 10px 0; }
+  padding: 5px 0; }
 
 .grafana {
   background-image: url("../img/grafana.png");
@@ -6535,7 +6535,10 @@ label.panel-block {
   padding: 10px 0; }
 
 .mongrad {
-  background: linear-gradient(to right, #1f8b31, #064d21); }
+  background: linear-gradient(to right, #11651F, #0C130E); }
+
+.backgroundHome {
+  background-image: url("../img/graf.jpg"); }
 
 .Copyleft {
   display: inline-block;

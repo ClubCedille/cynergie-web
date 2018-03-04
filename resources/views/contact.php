@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <section class="hero is-primary is-medium  mongrad">
+  <section class="hero is-success is-medium  backgroundHome">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -51,63 +51,18 @@
   </section>
   <section class="section is-medium ">
     <div class="container  ">
-      <div class="form-width">
-        <form id="contactus" enctype="multipart/form-data"  method="post" >
-          <div class="field">
-            <label class="label">Votre Nom</label>
-            <div class="control">
-              <input class="input" name="name" type="text" placeholder="Votre nom"  maxlength="50">
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input" type="email" name="email" placeholder="Votre e-mail"   maxlength="50">
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-            </div>
-
-          </div>
-
-          <div class="field">
-            <label class="label">Phone</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input" type="tel" name="phone" placeholder="Votre numéro"   maxlength="50">
-              <span class="icon is-small is-left">
-                <i class="fas fa-phone"></i>
-              </span>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Subject</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input"  name="subject" placeholder="Sujet du message"   maxlength="50">
-              <span class="icon is-small is-left">
-                <i class="fal fa-comment"></i>
-              </span>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Message</label>
-            <div class="control">
-              <textarea class="textarea" name="message" placeholder="Votre message" ></textarea>
-            </div>
-          </div>
-
-          <div class="field is-grouped">
-            <div class="control">
-              <button name="submit" type="submit" class="button is-link">Envoyer</button>
-            </div>
-          </div>
-        </form>
-      </div>
+      <address align="center" >
+            Email:&nbsp;&nbsp;<a href="mailto:cedille@ens.etsmtl.ca">cedille@ens.etsmtl.ca</a>S<br> 
+            Téléphone: (514) 396-8800 ext.7302<br>
+            Visit us at:<br>
+            1100, rue Notre-Dame Ouest<br>
+            Montréal (Québec) H3C 1K3<br>
+            Local A-1304 (partagé avec club ApplETS)<br>
+            Canada
+      </address>
     </div>
     <section class="section is-small ">
-      
+    
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.9302763822852!2d-73.5649800972535!3d45.49472019086769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure+%C3%89TS!5e0!3m2!1sen!2sca!4v1518919044091"   width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
   </section>

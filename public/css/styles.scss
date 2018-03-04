@@ -1,78 +1,88 @@
 @charset "utf-8";
 
-@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
 
-$cynergie : linear-gradient(to right, #1f8b31, #064d21); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-$technologie : linear-gradient(to right, #e6522c, #d8694d);
+$cynergie: linear-gradient(to right, #11651F, #0C130E);
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+$technologie: linear-gradient(to right, #e6522c, #d8694d);
 
 
 
 
-@import "../node_modules/bulma/bulma";
+@import "../../node_modules/bulma/bulma";
 
 .form-width {
-  padding-left: 400px;
-  padding-right: 400px;
-}
-.tech{
-  background-color: #ffffff;
-  text-align: left;
-  color:rgb(0, 0, 0);
-  font-family: Lato, sans-serif;
-  margin-bottom: 0px;
-  padding: 10px 0;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
-.prometheus{
-  background: $technologie;
-  background-color: #e6522c;
-  text-align: left;
-  font-family: Lato, sans-serif;
-  margin-bottom: 0px;
-  padding: 5px 0
+.tech {
+    background-color: #ffffff;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: Lato, sans-serif;
+    margin-bottom: 0px;
+    padding: 10px 0;
 }
-.grafana{
-  background-image:url("../img/grafana.png");
-  text-align: left;
-  color:white;
-  font-family: Lato, sans-serif;
-  margin-bottom: 0px;
-  padding: 10px 0;
 
+.prometheus {
+    background: $technologie;
+    background-color: #e6522c;
+    text-align: left;
+    font-family: Lato, sans-serif;
+    margin-bottom: 0px;
+    padding: 5px 0
 }
+
+.grafana {
+    background-image: url("../img/grafana.png");
+    text-align: left;
+    color: white;
+    font-family: Lato, sans-serif;
+    margin-bottom: 0px;
+    padding: 10px 0;
+}
+
 .mongrad {
-  background: $cynergie;
+    background: $cynergie;
 }
-.Copyleft{
 
-  display: inline-block;
-  text-align: right;
-  margin: 0px;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: “FlipH”;
-
+.backgroundHome {
+    background-image: url("../img/graf.jpg");
 }
+
+.Copyleft {
+
+    display: inline-block;
+    text-align: right;
+    margin: 0px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: “FlipH”;
+}
+
 #container {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  position: relative;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
 }
+
 #container2 {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  position: relative;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
 }
+
 #container3 {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  position: relative;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
 }
-
-
