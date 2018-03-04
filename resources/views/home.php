@@ -18,13 +18,13 @@
 </head>
 
 <body>
-    <section class="hero is-primary is-medium  mongrad">
+    <section class="hero is-success is-fullheight  backgroundHome">
         <div class="hero-head">
             <nav class="navbar  ">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item" href="#">
-                            <img src="img/cynergie-logo-white.png" class="" alt="Logo">
+                        <a class="navbar-item" href="/">
+                            <img src="img/cynergie-logo-white.png"  class="" alt="Logo">
                         </a>
                         <span class="navbar-burger burger" data-target="navbarMenu">
                             <span></span>
@@ -34,10 +34,10 @@
                     </div>
                     <div id="navbarMenu" class="navbar-menu">
                         <div class="navbar-end">
-                            <a href="index.php" class="navbar-item is-active">
+                            <a href="#" class="navbar-item is-active">
                                 Projet
                             </a>
-                            <a class="navbar-item" href="php/contact.php">
+                            <a class="navbar-item" href="contact">
                                 Contact
                             </a>
                             <span class="navbar-item">
@@ -54,14 +54,16 @@
             </nav>
         </div>
         <div class="hero-body">
+
             <div class="container has-text-centered">
                 <h1 class="title animated flipInX">
                     Çynergie
                 </h1>
                 <h2 class="subtitle animated flipInX">
                     Consommation énergétique en temps réel
-                </h2>
+                
             </div>
+            
         </div>
     </section>
     <section class="section">
@@ -135,7 +137,7 @@
                 <div class="columns">
                     <div class="column">
                         <div class="content">
-                            <h1 class="has-text-white">Projet de maitrîse</h1>
+                            <h1 class="has-text-white">Projet de maitrîse : </h1>
 
                             <h3 class="has-text-white">Portée : </h3>
                             <p class="has-text-white">
@@ -160,7 +162,7 @@
                             </p>
                             <h3 class="has-text-white">Architecture du project Cynergie : </h3>
                             <img src="img/plateform_generic-page-001.jpg">
-                            <figcaption>
+                            <figcaption class="has-text-white">
                                 * Conception d’un portefeuille de projets exploitant les technologies de l’Internet des Objets pour la gestion des bâtiments
                                 de l’ÉTS par Gautier COLAJANNI
                             </figcaption>
@@ -333,7 +335,7 @@
                         <a class="button is-link is-outlined" href="https://www.facebook.com/clubcedille">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="button is-link is-outlined" href="php/contact.php">
+                        <a class="button is-link is-outlined" href="#">
                             <i class="far fa-envelope"></i>
                         </a>
                         <a class="button is-link is-outlined" href="https://github.com/ClubCedille?utf8=%E2%9C%93&q=cynergie&type=&language=">
