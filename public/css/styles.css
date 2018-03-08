@@ -6510,8 +6510,26 @@ label.panel-block {
   padding-left: 400px;
   padding-right: 400px; }
 
-.tech {
+.tile.is-child {
+  background-color: #ffffff; }
+
+#resumer {
+  background-image: url("../img/dust_scratches.png"); }
+
+.backgroundNode {
+  background-image: url("../img/squairy_light.png");
   background-color: #ffffff;
+  font-size: 140%;
+  text-align: left;
+  color: black;
+  font-family: Lato, sans-serif;
+  margin-bottom: 0px;
+  padding: 10px 0; }
+
+.backgroundApi {
+  background-image: url("../img/squairy_light.png");
+  background-color: #ffffff;
+  font-size: 140%;
   text-align: left;
   color: black;
   font-family: Lato, sans-serif;
@@ -6520,16 +6538,24 @@ label.panel-block {
 
 .prometheus {
   background: linear-gradient(to right, #e6522c, #d8694d);
-  background-color: #e6522c;
+  background-color: #9E452E;
+  font-size: 120%;
   text-align: left;
   font-family: Lato, sans-serif;
   margin-bottom: 0px;
   padding: 5px 0; }
 
+/* .hero .navbar {
+    background-color: transparent;
+ }  */
+.section.is-medium {
+  background-image: url("../img/subtle_dots.png"); }
+
 .grafana {
   background-image: url("../img/grafana.png");
   text-align: left;
   color: white;
+  font-size: 128%;
   font-family: Lato, sans-serif;
   margin-bottom: 0px;
   padding: 10px 0; }
@@ -6550,6 +6576,16 @@ label.panel-block {
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: “FlipH”; }
+
+.adresse {
+  display: inline-block;
+  font-size: 150%;
+  font-family: Lato, sans-serif;
+  padding: 10px 0;
+  text-align: left; }
+
+.container.contact {
+  text-align: center; }
 
 #container {
   margin: 20px;

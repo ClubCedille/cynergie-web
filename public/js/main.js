@@ -1,16 +1,24 @@
 // progressbar.js@1.0.0 version is used
 // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
 window.onload = function(e){ 
+   
 $(document).ready(function () {
+   
+   $(window).on("scroll",function(){
+        changeNavBarColor();
+   });
+
+
+   
     var bool = false;
     $(window).scroll(function () {
-        var hT = $('#lolololo').offset().top,
-            hH = $('#lolololo').outerHeight(),
+        var hT = $('#resumer').offset().top,
+            hH = $('#resumer').outerHeight(),
             wH = $(window).height(),
             wS = $(this).scrollTop();
         if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH) && bool == false) {
             var bar = new ProgressBar.Circle(container, {
-                color: '#aaa',
+                color: '#0C130E',
                 // This has to be the same size as the maximum width to
                 // prevent clipping
                 strokeWidth: 4,
@@ -123,3 +131,18 @@ $(document).ready(function () {
     });
 });
 }
+/**
+ * [changeNavBarColor changer background de la bar de navigation]
+ * @return {[type]} [no return]
+ */
+function changeNavBarColor(){
+
+    var wn = $(window).scrollTop();
+    if(wn > 120){
+        
+         $(".hero .navbar").css("background","rgb(0,0,0)");
+    }
+    else{
+       $(".hero .navbar").css("background","transparent");
+    }
+  }

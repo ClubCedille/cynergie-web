@@ -15,14 +15,15 @@
     <script src="js/main.js"></script>
     <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
+
 </head>
 
 <body>
     <section class="hero is-success is-fullheight  backgroundHome">
-        <div class="hero-head">
-            <nav class="navbar  ">
+        <div class="hero-head ">
+            <nav class="navbar  is-fixed-top  ">
                 <div class="container">
-                    <div class="navbar-brand">
+                    <div class="navbar-brand ">
                         <a class="navbar-item" href="/">
                             <img src="img/cynergie-logo-white.png"  class="" alt="Logo">
                         </a>
@@ -32,10 +33,19 @@
                             <span></span>
                         </span>
                     </div>
-                    <div id="navbarMenu" class="navbar-menu">
+                    <div id="navbarMenu" class="navbar-menu ">
                         <div class="navbar-end">
                             <a href="#" class="navbar-item is-active">
                                 Projet
+                            </a>
+                            <a href="#maitrîse" class="navbar-item ">
+                                Maitrîse
+                            </a>
+                            <a href="#technologie" class="navbar-item ">
+                                Technologie
+                            </a>
+                            <a href="#partenaires" class="navbar-item ">
+                                Partenaires
                             </a>
                             <a class="navbar-item" href="contact">
                                 Contact
@@ -53,7 +63,7 @@
                 </div>
             </nav>
         </div>
-        <div class="hero-body">
+        <div class="hero-body" >
 
             <div class="container has-text-centered">
                 <h1 class="title animated flipInX">
@@ -66,7 +76,7 @@
             
         </div>
     </section>
-    <section class="section">
+    <section id="resumer" class="section">
         <div class="intro column is-8 is-offset-2">
             <div class="content has-text-centered">
                 <h3>Çynergie a pour but de fournir une interface de visualisation en temps réel de la consommation des ressources
@@ -74,7 +84,7 @@
                     de gas, etc.</h3>
             </div>
         </div>
-        <div id="lolololo" class="tile is-ancestor">
+        <div  class="tile is-ancestor">
             <div class="tile is-4 is-parent">
                 <div class="tile is-child box">
                     <div class="content">
@@ -132,8 +142,8 @@
         </div>
     </section>
     <div class="mongrad">
-        <section class="section">
-            <div class="container">
+        <section id="maitrîse" class="section">
+            <div class="container ">
                 <div class="columns">
                     <div class="column">
                         <div class="content">
@@ -172,9 +182,9 @@
             </div>
         </section>
     </div>
-    <div class="tech">
-        <section class="section">
-            <div class="container ">
+    <div class="backgroundNode">
+        <section id="technologie" class="section">
+            <div class="container contact ">
                 <div class="content ">
                     <h1>Les technologies utilisées : </h1>
                     <br>
@@ -195,18 +205,18 @@
                     </a>
                 </div>
                 <div class="column">
-                    <h3>
-                        <br>
+                    <h2>
+                        
                         <br> ces langages sont utiliser pour implementer l adpateur qui permet de recuperer les donnees en temps
                         reeel et les exposer a la base a la database prometheus.
-                    </h3>
+                    </h2>
                 </div>
                 <div class="column is-one-fifth">
                 </div>
             </div>
         </section>
     </div>
-    <div class="tech">
+    <div class="backgroundApi ">
         <section class="section">
             <div class="columns">
                 <div class="column is-one-fifth">
@@ -217,10 +227,10 @@
                     </a>
                 </div>
                 <div class="column">
-                    <h3>
-                        <br>
+                    <h2>
+                        
                         <br> Ce type d API sera utilise pour faciliter l acces aux donnees de facon efficace et securitaire.
-                    </h3>
+                    </h2>
                 </div>
                 <div class="column is-one-fifth">
                 </div>
@@ -238,7 +248,7 @@
 
                     <a href="https://prometheus.io/">
                         <img src="https://cdn.shopify.com/s/files/1/1300/8977/products/prometheus_PMS_7417_solid_bkgd_large.png?v=1468329127" height="200"
-                            width="200">
+                            width="200" >
                     </a>
                 </div>
                 <div class="column ">
@@ -247,7 +257,7 @@
                         <h3 class="has-text-white">Prometheus</h3>
                     </div>
 
-                    <p class="has-text-white">
+                    <p class="has-text-white " id="textsize">
                         Prometheus c'est un outils de monitorage et d'alerte de systèmes Open Source, créée à l'origine sur SoundCloud. Depuis sa
                         création en 2012, de nombreuses entreprises et organisations ont adopté Prometheus, et le projet
                         a une communauté de développeurs et d'utilisateurs très active. C'est maintenant un projet Open Source
@@ -291,10 +301,11 @@
             </div>
         </section>
     </div>
-    <section class="section">
-        <div class="container">
+    <section id="partenaires" class="section">
+        <div class="container contact">
             <h4 class="title">
                 Partenaires
+                <br>
             </h4>
             <div class="columns features">
 
