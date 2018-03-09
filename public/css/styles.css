@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -6506,6 +6505,10 @@ label.panel-block {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
 
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/**
+ * css home
+ */
 .form-width {
   padding-left: 400px;
   padding-right: 400px; }
@@ -6516,10 +6519,31 @@ label.panel-block {
 #resumer {
   background-image: url("../img/dust_scratches.png"); }
 
+#tileText {
+  font-size: 110%;
+  text-align: left;
+  color: black;
+  font-family: Lato, sans-serif;
+  margin-bottom: 0px;
+  padding: 10px 0; }
+
+.title.home {
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 3rem; }
+
+.subtitle.home {
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 1.7rem; }
+
+.title {
+  text-align: center; }
+
 .backgroundNode {
   background-image: url("../img/squairy_light.png");
   background-color: #ffffff;
-  font-size: 140%;
+  font-size: 128%;
   text-align: left;
   color: black;
   font-family: Lato, sans-serif;
@@ -6529,7 +6553,7 @@ label.panel-block {
 .backgroundApi {
   background-image: url("../img/squairy_light.png");
   background-color: #ffffff;
-  font-size: 140%;
+  font-size: 128%;
   text-align: left;
   color: black;
   font-family: Lato, sans-serif;
@@ -6539,15 +6563,12 @@ label.panel-block {
 .prometheus {
   background: linear-gradient(to right, #e6522c, #d8694d);
   background-color: #9E452E;
-  font-size: 120%;
+  font-size: 128%;
   text-align: left;
   font-family: Lato, sans-serif;
   margin-bottom: 0px;
   padding: 5px 0; }
 
-/* .hero .navbar {
-    background-color: transparent;
- }  */
 .section.is-medium {
   background-image: url("../img/subtle_dots.png"); }
 
@@ -6561,7 +6582,13 @@ label.panel-block {
   padding: 10px 0; }
 
 .mongrad {
-  background: linear-gradient(to right, #11651F, #0C130E); }
+  background: linear-gradient(to right, #11651F, #0C130E);
+  text-align: left;
+  color: white;
+  font-size: 128%;
+  font-family: Lato, sans-serif;
+  margin-bottom: 0px;
+  padding: 10px 0; }
 
 .backgroundHome {
   background-image: url("../img/graf.jpg"); }
@@ -6576,16 +6603,6 @@ label.panel-block {
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: “FlipH”; }
-
-.adresse {
-  display: inline-block;
-  font-size: 150%;
-  font-family: Lato, sans-serif;
-  padding: 10px 0;
-  text-align: left; }
-
-.container.contact {
-  text-align: center; }
 
 #container {
   margin: 20px;
@@ -6604,3 +6621,16 @@ label.panel-block {
   width: 200px;
   height: 200px;
   position: relative; }
+
+/**
+ * contact
+ */
+.adresse {
+  display: inline-block;
+  font-size: 150%;
+  font-family: Lato, sans-serif;
+  padding: 10px 0;
+  text-align: left; }
+
+.container.contact {
+  text-align: center; }

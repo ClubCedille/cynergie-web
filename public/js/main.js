@@ -1,148 +1,112 @@
 // progressbar.js@1.0.0 version is used
 // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
-window.onload = function(e){ 
-   
-$(document).ready(function () {
-   
-   $(window).on("scroll",function(){
-        changeNavBarColor();
-   });
+window.onload = function(e) {
+
+    $(document).ready(function() {
+
+        $(window).on("scroll", function() {
+            changeNavBarColor();
+        });
+
+        //to load the progressebar only one time 
+        var porgresseBarUsed = false;
 
 
-   
-    var bool = false;
-    $(window).scroll(function () {
-        var hT = $('#resumer').offset().top,
-            hH = $('#resumer').outerHeight(),
-            wH = $(window).height(),
-            wS = $(this).scrollTop();
-        if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH) && bool == false) {
-            var bar = new ProgressBar.Circle(container, {
-                color: '#0C130E',
-                // This has to be the same size as the maximum width to
-                // prevent clipping
-                strokeWidth: 4,
-                trailWidth: 1,
-                easing: 'easeInOut',
-                duration: 1400,
-                text: {
-                    autoStyleContainer: false
-                },
-                from: {
-                    color: '#aaa',
-                    width: 1
-                },
-                to: {
-                    color: '#3ADF00',
-                    width: 4
-                },
-                // Set default step function for all animate calls
-                step: function (state, circle) {
-                    circle.path.setAttribute('stroke', state.color);
-                    circle.path.setAttribute('stroke-width', state.width);
+        $(window).scroll(function() {
+            var hT = $('#resumer').offset().top,
+                hH = $('#resumer').outerHeight(),
+                wH = $(window).height(),
+                wS = $(this).scrollTop();
+            if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH) && porgresseBarUsed == false) {
 
-                    var value = Math.round(circle.value() * 100);
-                    if (value === 0) {
-                        circle.setText('');
-                    } else {
-                        circle.setText(value + '%');
-                    }
 
+
+                /**
+                 * creer les object de progressebar
+                 */
+                var progressebar = progresseBarCercle(container, '#3ADF00');
+                var progressebar2 = progresseBarCercle(container2, '#AEB404');
+                var progressebar3 = progresseBarCercle(container3, '#B22222');
+
+
+                var barArray = [progressebar, progressebar2, progressebar3];
+
+                /**
+                 * set the text style
+                 */
+                for (i = 0; i < barArray.length; i++) {
+                    barArray[i].text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+                    barArray[i].text.style.fontSize = '2rem';
                 }
-            });
 
-            var bar2 = new ProgressBar.Circle(container2, {
-                color: '#aaa',
-                // This has to be the same size as the maximum width to
-                // prevent clipping
-                strokeWidth: 4,
-                trailWidth: 1,
-                easing: 'easeInOut',
-                duration: 1400,
-                text: {
-                    autoStyleContainer: false
-                },
-                from: {
-                    color: '#aaa',
-                    width: 1
-                },
-                to: {
-                    color: '#AEB404',
-                    width: 4
-                },
-                // Set default step function for all animate calls
-                step: function (state, circle) {
-                    circle.path.setAttribute('stroke', state.color);
-                    circle.path.setAttribute('stroke-width', state.width);
+                /**
+                 * pourcentage de progression
+                 */
+                progressebar.animate(0.8);
+                progressebar2.animate(0.6);
+                progressebar3.animate(0.2);
 
-                    var value = Math.round(circle.value() * 100);
-                    if (value === 0) {
-                        circle.setText('');
-                    } else {
-                        circle.setText(value + '%');
-                    }
-
-                }
-            });
-            var bar3 = new ProgressBar.Circle(container3, {
-                color: '#aaa',
-                // This has to be the same size as the maximum width to
-                // prevent clipping
-                strokeWidth: 4,
-                trailWidth: 1,
-                easing: 'easeInOut',
-                duration: 1400,
-                text: {
-                    autoStyleContainer: false
-                },
-                from: {
-                    color: '#B40404',
-                    width: 1
-                },
-                to: {
-                    color: '#B40404',
-                    width: 4
-                },
-                // Set default step function for all animate calls
-                step: function (state, circle) {
-                    circle.path.setAttribute('stroke', state.color);
-                    circle.path.setAttribute('stroke-width', state.width);
-
-                    var value = Math.round(circle.value() * 100);
-                    if (value === 0) {
-                        circle.setText('');
-                    } else {
-                        circle.setText(value + '%');
-                    }
-
-                }
-            });
-            bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-            bar.text.style.fontSize = '2rem';
-            bar.animate(0.8); // Number from 0.0 to 1.0
-            bar2.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-            bar2.text.style.fontSize = '2rem';
-            bar2.animate(0.6); // Number from 0.0 to 1.0
-            bar3.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-            bar3.text.style.fontSize = '2rem';
-            bar3.animate(0.2); // Number from 0.0 to 1.0
-            bool = true
-        }
+                porgresseBarUsed = true;
+            }
+        });
     });
-});
 }
 /**
  * [changeNavBarColor changer background de la bar de navigation]
  * @return {[type]} [no return]
  */
-function changeNavBarColor(){
+function changeNavBarColor() {
 
     var wn = $(window).scrollTop();
-    if(wn > 120){
-        
-         $(".hero .navbar").css("background","rgb(0,0,0)");
+    if (wn > 120) {
+
+        $(".hero .navbar").css("background", "rgb(0,0,0)");
+    } else {
+        $(".hero .navbar").css("background", "transparent");
     }
-    else{
-       $(".hero .navbar").css("background","transparent");
-    }
-  }
+}
+
+
+/**
+ * [progresseBarCercle description]
+ * @param  Html id containerBar   id Html tag
+ * @param  Couleur color          la couleur pour une bar 
+ * @return ProgressBar            ProgressBar object to be used
+ */
+function progresseBarCercle(containerBar, color) {
+
+     console.log(color);
+    return new ProgressBar.Circle(containerBar, {
+        color: '#aaa',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 4,
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        text: {
+            autoStyleContainer: false
+        },
+        from: {
+            color: color,
+            width: 1
+        },
+        to: {
+            color: color,
+            width: 4
+        },
+        // Set default step function for all animate calls
+        step: function(state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            circle.path.setAttribute('stroke-width', state.width);
+
+            var value = Math.round(circle.value() * 100);
+            if (value === 0) {
+                circle.setText('');
+            } else {
+                circle.setText(value + '%');
+            }
+
+        }
+    });
+}

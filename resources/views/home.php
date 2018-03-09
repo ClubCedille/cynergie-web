@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cynergie</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel='shortcut icon' href='http://cedille.etsmtl.ca/favicon.ico' type='image/x-icon' />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
-
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -29,8 +30,8 @@
                         </a>
                         <span class="navbar-burger burger" data-target="navbarMenu">
                             <span></span>
-                            <span></span>
-                            <span></span>
+                        <span></span>
+                        <span></span>
                         </span>
                     </div>
                     <div id="navbarMenu" class="navbar-menu ">
@@ -55,21 +56,20 @@
                                     <span class="icon">
                                         <i class="far fa-copyright"></i>
                                     </span>
-                                    <span>Club cedille</span>
-                                </a>
+                            <span>Club cedille</span>
+                            </a>
                             </span>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
-        <div class="hero-body" >
-
-            <div class="container has-text-centered">
-                <h1 class="title animated flipInX">
+        <div class="hero-body">
+            <div  class="container has-text-centered">
+                <h1 class="title home animated flipInX">
                     Çynergie
                 </h1>
-                <h2 class="subtitle animated flipInX">
+                <h2 class="subtitle home animated flipInX">
                     Consommation énergétique en temps réel
                 
             </div>
@@ -84,14 +84,14 @@
                     de gas, etc.</h3>
             </div>
         </div>
-        <div  class="tile is-ancestor">
+        <div   class="tile is-ancestor">
             <div class="tile is-4 is-parent">
                 <div class="tile is-child box">
                     <div class="content">
                         <p class="title">
                             Temps réel
                         </p>
-                        <p class="content center">
+                        <p id="tileText" class="content center">
                             Recuperer les donnees de la consommation energetique de l Ets en temps reel a partir des controleurs connectes aux reseaux.
                             Ainsi, on peut recuperer les donnes de la consommation electrique ,d eau, et de gas des differents
                             batiement de L'École de technologie supérieure. la recuperation des donnees sera fait de facon
@@ -111,7 +111,7 @@
                     <p class="title">
                         Graphiques et tableaux
                     </p>
-                    <p class="content center">
+                    <p  id="tileText" class="content center">
                         Un premier portail est disponible pour la visualisation des donnees a l aide de graphiques et de tableaux. cette platforme
                         se nomant Grafana est utilise par plusieurs professionnels pour le monitorage de systeme, pour le
                         projet Cynergie elle sera utilise pour afficher des graphiques et des tableaux qui illustre la consommation
@@ -127,7 +127,7 @@
                     <p class="title">
                         Portail et API
                     </p>
-                    <p class="content center">
+                    <p id="tileText" class="content center">
                         Un deuxieme portail Cynergie sera implemente pour permettre aux etudiants ou professeurs de telecharger facilement les donnees
                         dynamiquement et les exporter en des fichiers CSV ou JSON ,il peut aussi offrir des infomations suplementaires
                         sur les donnes disponibles. De plus une API sera disponible pour faciliter l acces aux donnees et
@@ -147,7 +147,7 @@
                 <div class="columns">
                     <div class="column">
                         <div class="content">
-                            <h1 class="has-text-white">Projet de maitrîse : </h1>
+                            <h1 class="title has-text-white">Projet de maitrîse : </h1>
 
                             <h3 class="has-text-white">Portée : </h3>
                             <p class="has-text-white">
@@ -186,7 +186,7 @@
         <section id="technologie" class="section">
             <div class="container contact ">
                 <div class="content ">
-                    <h1>Les technologies utilisées : </h1>
+                    <h1 class="title ">Les technologies utilisées : </h1>
                     <br>
                     <br>
                     <br>
@@ -207,14 +207,14 @@
                 <div class="column">
                     <h2>
                         
-                        <br> ces langages sont utiliser pour implementer l adpateur qui permet de recuperer les donnees en temps
+                        <br> Ces langages sont utiliser pour implementer l adpateur qui permet de recuperer les donnees en temps
                         reeel et les exposer a la base a la database prometheus.
                     </h2>
-                </div>
-                <div class="column is-one-fifth">
-                </div>
             </div>
-        </section>
+            <div class="column is-one-fifth">
+            </div>
+        </div>
+    </section>
     </div>
     <div class="backgroundApi ">
         <section class="section">
@@ -239,64 +239,76 @@
     </div>
     <div class="prometheus">
         <section class="section">
-
             <div class="columns">
                 <div class="column is-one-fifth">
                 </div>
-
                 <div class="column">
-
                     <a href="https://prometheus.io/">
                         <img src="https://cdn.shopify.com/s/files/1/1300/8977/products/prometheus_PMS_7417_solid_bkgd_large.png?v=1468329127" height="200"
                             width="200" >
                     </a>
                 </div>
                 <div class="column ">
-
                     <div class="content ">
-                        <h3 class="has-text-white">Prometheus</h3>
+                        <h3 class="title has-text-white">Prometheus</h3>
                     </div>
-
                     <p class="has-text-white " id="textsize">
-                        Prometheus c'est un outils de monitorage et d'alerte de systèmes Open Source, créée à l'origine sur SoundCloud. Depuis sa
-                        création en 2012, de nombreuses entreprises et organisations ont adopté Prometheus, et le projet
-                        a une communauté de développeurs et d'utilisateurs très active. C'est maintenant un projet Open Source
-                        autonome et maintenu indépendamment de toute entreprise. Pour souligner cela, et pour clarifier la
-                        structure de gouvernance du projet, Prometheus a rejoint la Cloud Native Computing Foundation en
-                        2016 en tant que deuxième projet hébergé, après Kubernetes.
+                        Prometheus c'est un outils de monitorage et d'alerte de systèmes Open Source, créée à l'origine sur SoundCloud. Depuis sa création en 2012, de nombreuses entreprises et organisations ont adopté Prometheus, et le projet a une communauté de développeurs et d'utilisateurs très active. C'est maintenant un projet Open Source autonome et maintenu indépendamment de toute entreprise. Pour souligner cela, et pour clarifier la structure de gouvernance du projet, Prometheus a rejoint la Cloud Native Computing Foundation en 2016 en tant que deuxième projet hébergé, après Kubernetes.
                     </p>
-
                 </div>
                 <div class="column is-one-fifth">
                 </div>
             </div>
         </section>
     </div>
-
-
     <div class="grafana">
         <section class="section">
-
             <div class="columns">
                 <div class="column is-one-fifth">
                 </div>
-
                 <div class="column ">
-
                     <a href="https://grafana.com/">
                         <img src="img/grafana_logo.jpg" height="200" width="200">
                     </a>
                 </div>
                 <div class="column ">
-
                     <div class="content ">
-                        <h3 class="has-text-white">Grafana</h3>
+                        <h3 class="title has-text-white">Grafana</h3>
                     </div>
-                    Grafana est le logiciel de facto pour l'analyse des séries temporelles, avec plus de 100 000 installations actives. Les clients
-                    se tournent vers Grafana Labs pour rassembler leurs sources de données disparates, via des logiciels
-                    neutres et open source.
+                    Grafana est le logiciel de facto pour l'analyse des séries temporelles, avec plus de 100 000 installations actives. Les clients se tournent vers Grafana Labs pour rassembler leurs sources de données disparates, via des logiciels neutres et open source.
                 </div>
                 <div class="column is-one-fifth">
+                </div>
+            </div>
+            <div class="container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/grafana1.png" alt="Los Angeles" style="width:100%;">
+                        </div>
+                        <div class="item">
+                            <img src="img/grafana2.png" alt="Chicago" style="width:100%;">
+                        </div>
+                        <div class="item">
+                            <img src="img/grafana3.png" alt="New york" style="width:100%;">
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
                 </div>
             </div>
         </section>
@@ -308,10 +320,8 @@
                 <br>
             </h4>
             <div class="columns features">
-
                 <div class="column gap">
                     <div class="content center">
-
                         <a href="https://etsmtl.ca">
                             <img src="img/ets_logo.png" height="200" width="200">
                         </a>
@@ -319,9 +329,8 @@
                 </div>
                 <div class="column">
                     <div class="content center">
-
                         <a href="https://cedille.etsmtl.ca">
-                            <img src="img/Logo_Text & CEDILLE.png" height="200" width="200">
+                            <img src="img/cedille-logo.png" height="200" width="200">
                         </a>
                     </div>
                 </div>
@@ -335,7 +344,6 @@
             </div>
         </div>
     </section>
-
     <footer class="footer">
         <div class="container">
             <div class="columns features">
@@ -355,13 +363,11 @@
                         <a class="button is-link is-outlined" href="https://www.linkedin.com/company/cedille">
                             <i class="fab fa-linkedin"></i>
                         </a>
-
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

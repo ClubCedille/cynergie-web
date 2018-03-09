@@ -1,69 +1,90 @@
 @charset "utf-8";
 
 @import "../../node_modules/bulma/sass/utilities/initial-variables";
-
-$cynergie: linear-gradient(to right, #11651F, #0C130E);
+@import "../../node_modules/bulma/bulma";
 
 
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+$cynergie: linear-gradient(to right, #11651F, #0C130E);
 $technologie: linear-gradient(to right, #e6522c, #d8694d);
 
 
 
-
-@import "../../node_modules/bulma/bulma";
+/**
+ * css home
+ */
 
 .form-width {
     padding-left: 400px;
     padding-right: 400px;
 }
 
-.tile.is-child{
+.tile.is-child {
 
-background-color:  #ffffff;
+    background-color: #ffffff;
 }
-#resumer{
-    background-image: url("../img/dust_scratches.png");
- 
- }
 
+#resumer {
+    background-image: url("../img/dust_scratches.png");
+}
+
+#tileText {
+
+    font-size: 110%;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: Lato, sans-serif;
+    margin-bottom: 0px;
+    padding: 10px 0;
+}
+
+.title.home {
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 3rem;
+}
+.subtitle.home{
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 1.7rem;
+}
+.title{
+
+text-align: center;
+
+}
 .backgroundNode {
     background-image: url("../img/squairy_light.png");
     background-color: #ffffff;
-    font-size: 140%;
+    font-size: 128%;
     text-align: left;
     color: rgb(0, 0, 0);
     font-family: Lato, sans-serif;
     margin-bottom: 0px;
     padding: 10px 0;
-    
 }
-.backgroundApi{
+
+.backgroundApi {
     background-image: url("../img/squairy_light.png");
     background-color: #ffffff;
-    font-size: 140%;
+    font-size: 128%;
     text-align: left;
     color: rgb(0, 0, 0);
     font-family: Lato, sans-serif;
     margin-bottom: 0px;
     padding: 10px 0;
-   
-
 }
+
 .prometheus {
     background: $technologie;
     background-color: #9E452E;
-    font-size: 120%;
+    font-size: 128%;
     text-align: left;
     font-family: Lato, sans-serif;
     margin-bottom: 0px;
     padding: 5px 0;
 }
-
- /* .hero .navbar {
-    background-color: transparent;
- }  */
 
 
 .section.is-medium {
@@ -82,9 +103,13 @@ background-color:  #ffffff;
 
 .mongrad {
     background: $cynergie;
+    text-align: left;
+    color: white;
+    font-size: 128%;
+    font-family: Lato, sans-serif;
+    margin-bottom: 0px;
+    padding: 10px 0;
 }
-
-
 
 .backgroundHome {
     background-image: url("../img/graf.jpg");
@@ -101,21 +126,6 @@ background-color:  #ffffff;
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: “FlipH”;
-}
-
-.adresse {
-
-    display: inline-block;
-    font-size: 150%;
-    font-family: Lato, sans-serif;
-    padding: 10px 0;
-    text-align: left;
-}
-
-
-
-.container.contact {
-    text-align: center;
 }
 
 #container {
@@ -137,4 +147,23 @@ background-color:  #ffffff;
     width: 200px;
     height: 200px;
     position: relative;
+}
+
+
+
+/**
+ * contact
+ */
+
+.adresse {
+
+    display: inline-block;
+    font-size: 150%;
+    font-family: Lato, sans-serif;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.container.contact {
+    text-align: center;
 }
