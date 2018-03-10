@@ -1,25 +1,74 @@
 @charset "utf-8";
 
 @import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/bulma";
 
-$cynergie: linear-gradient(to right, #11651F, #0C130E);
 
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+$cynergie: linear-gradient(to right, #11651F, #0C130E);
 $technologie: linear-gradient(to right, #e6522c, #d8694d);
 
 
 
-
-@import "../../node_modules/bulma/bulma";
+/**
+ * css home
+ */
 
 .form-width {
     padding-left: 400px;
     padding-right: 400px;
 }
 
-.tech {
+.tile.is-child {
+
     background-color: #ffffff;
+}
+
+#resumer {
+    background-image: url("../img/dust_scratches.png");
+}
+
+#tileText {
+
+    font-size: 110%;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: Lato, sans-serif;
+    margin-bottom: 0px;
+    padding: 10px 0;
+}
+
+.title.home {
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 3rem;
+}
+.subtitle.home{
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 1.5rem;
+}
+.title{
+
+text-align: center;
+
+}
+.backgroundNode {
+    background-image: url("../img/squairy_light.png");
+    background-color: #ffffff;
+    font-size: 128%;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: Lato, sans-serif;
+    margin-bottom: 0px;
+    padding: 10px 0;
+}
+
+.backgroundApi {
+    background-image: url("../img/squairy_light.png");
+    background-color: #ffffff;
+    font-size: 128%;
     text-align: left;
     color: rgb(0, 0, 0);
     font-family: Lato, sans-serif;
@@ -29,17 +78,24 @@ $technologie: linear-gradient(to right, #e6522c, #d8694d);
 
 .prometheus {
     background: $technologie;
-    background-color: #e6522c;
+    background-color: #9E452E;
+    font-size: 128%;
     text-align: left;
     font-family: Lato, sans-serif;
     margin-bottom: 0px;
-    padding: 5px 0
+    padding: 5px 0;
+}
+
+
+.section.is-medium {
+    background-image: url("../img/subtle_dots.png");
 }
 
 .grafana {
     background-image: url("../img/grafana.png");
     text-align: left;
     color: white;
+    font-size: 128%;
     font-family: Lato, sans-serif;
     margin-bottom: 0px;
     padding: 10px 0;
@@ -47,6 +103,12 @@ $technologie: linear-gradient(to right, #e6522c, #d8694d);
 
 .mongrad {
     background: $cynergie;
+    text-align: left;
+    color: white;
+    font-size: 128%;
+    font-family: Lato, sans-serif;
+    margin-bottom: 0px;
+    padding: 10px 0;
 }
 
 .backgroundHome {
@@ -85,4 +147,23 @@ $technologie: linear-gradient(to right, #e6522c, #d8694d);
     width: 200px;
     height: 200px;
     position: relative;
+}
+
+
+
+/**
+ * contact
+ */
+
+.adresse {
+
+    display: inline-block;
+    font-size: 150%;
+    font-family: Lato, sans-serif;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.container.contact {
+    text-align: center;
 }
