@@ -7,7 +7,6 @@ This website was created to show and explain the Cynergie project.
 ## To run with docker 
 
 - `docker run --rm -v $(pwd):/app composer/composer install`
-	- si cette commande ne fonctionne pas supprimer le fichier  `composer.lock `
 
 - `docker-compose up `
 

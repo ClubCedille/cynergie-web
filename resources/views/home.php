@@ -43,7 +43,7 @@
                                     Maitrîse
                                     </a>
                                     <a href="#technologie" class="navbar-item ">
-                                    Technologie
+                                    Technologies
                                     </a>
                                     <a href="#partenaires" class="navbar-item ">
                                     Partenaires
@@ -80,7 +80,7 @@
             <div class="intro column is-8 is-offset-2">
             <div class="content has-text-centered">
                         <h3>Çynergie a pour but de fournir une interface de visualisation en temps réel de la consommation des ressources
-                        énergétiques de l'École de technologie supérieure(ÉTS). Cela peut inclure la consommation d'eau, d'électricité,
+                        énergétiques de l'École de technologie supérieure(ETS). Cela peut inclure la consommation d'eau, d'électricité,
                         de gaz, etc.</h3>
             </div>
             </div>
@@ -92,10 +92,10 @@
                                     Temps réel
                         </p>
                         <p id="tileText" class="content center">
-                                    Récupérer les données de la consommation énergétique de l'ÉTS en temps réel à partir des contrôleurs connectés aux réseaux 
-                                    des différents bâtiments de L'École de technologie supérieure. la récupération des données sera faite de façon 
-                                    efficace pour que les données puissent être fiables et utilisées par les étudiants , les professeurs ou au public 
-                                    pour de la recherche ou autre .
+                                    Récupérer les données de la consommation énergétique de l'ETS en temps réel à partir des contrôleurs connectés aux réseaux 
+                                    des différents bâtiments de l'École de technologie supérieure. La récupération des données sera effectuée de façon 
+                                    efficace pour que les données puissent être fiables et utilisées par les étudiants, les professeurs et par le public 
+                                    pour de la recherche ou autres.
                                     <br>
                                     <br>
  
@@ -112,8 +112,8 @@
                         </p>
                         <p  id="tileText" class="content center">
                         Un premier portail est disponible pour la visualisation des données à l’aide de graphiques et de tableaux. Cette plateforme
-                        se nommant Grafana , le project Çynergie  l’utilise pour pour afficher des graphiques et des tableaux qui illustrent la consommation
-                        d’énergie des différents modules de L'École de technologie supérieure. Pour moment ce portail 
+                        se nommant Grafana, le project Çynergie l’utilise pour pour afficher des graphiques et des tableaux qui illustrent la consommation
+                        d’énergie des différents modules de l'École de technologie supérieure. En ce moment ce portail 
                         sera accessible avec une authentification unique pour des raisons de sécurité.
                         </p>
                         <br>
@@ -151,9 +151,9 @@
  
                                     <h3 class="has-text-white">Portée : </h3>
                                     <p class="has-text-white">
-                                    Ce projet concerne la création d’une plateforme permettant de grouper différentes sources de données. Le but est de pouvoir.
+                                    Ce projet concerne la création d’une plateforme permettant de grouper différentes sources de données. Le but est de pouvoir
                                     y agréger des données filtrées et fournir des données pouvant subir un post-traitement à
-                                    la fois pour une diffusion en temps réel que pour permettre un télé- chargement par lots.
+                                    la fois pour une diffusion en temps réel que pour permettre un téléchargement par lots.
                                     Il est nécessaire d’identifier les sources de données pour être capable de les stocker en
                                     ayant subi un prétraitement afin d’assurer une uniformité des données. Depuis la solution
                                     de stockage il doit être possible de les distribuer, brutes ou ayant subi un post-traitement
@@ -173,7 +173,7 @@
                                     <img src="img/plateform_generic-page-001.jpg">
                                     <figcaption class="has-text-white">
                                     * Conception d’un portefeuille de projets exploitant les technologies de l’Internet des Objets pour la gestion des bâtiments
-                                    de l’ÉTS par Gautier COLAJANNI
+                                    de l’ETS par Gautier COLAJANNI
                                     </figcaption>
                         </div>
                         </div>
@@ -206,7 +206,7 @@
                         <div class="column">
                         <h2>
                         
-                        <br> Ces langages sont utilisés pour implementer le Çynergie adpateur qui permet de récupérer les données en temps
+                        <br> Ces langages sont utilisés pour implementer l'adapteur Çynergie qui permet de récupérer les données en temps
                         réel et les exposer à la base de données Prometheus.
                         </h2>
             </div>
@@ -228,7 +228,7 @@
                         <div class="column">
                         <h2>
                         
-                        <br> Ce type d’API sera exploité pour faciliter l’accès aux données aux differents logiceils de traitement de façon 
+                        <br> Ce type d’API sera exploité pour faciliter l’accès aux données aux differents logiciels de traitement de façon 
                         efficace et sécuritaire.
                         </h2>
                         </div>
@@ -244,16 +244,20 @@
                         </div>
                         <div class="column">
                         <a href="https://prometheus.io/">
+                               <br>
+                              <br>
+                              <br>
                         <img src="https://cdn.shopify.com/s/files/1/1300/8977/products/prometheus_PMS_7417_solid_bkgd_large.png?v=1468329127" height="200"
                                     width="200" >
                         </a>
                         </div>
                         <div class="column ">
                         <div class="content ">
+
                         <h3 class="title has-text-white">Prometheus</h3>
                         </div>
                         <p class="has-text-white " id="textsize">
-                        Prometheus c'est un outils de monitorage et d'alerte de systèmes Open Source, créée à l'origine sur SoundCloud. Depuis sa création en 2012, de nombreuses entreprises et organisations ont adopté Prometheus, et le projet a une communauté de développeurs et d'utilisateurs très active. C'est maintenant un projet Open Source autonome et maintenu indépendamment de toute entreprise. Pour souligner cela, et pour clarifier la structure de gouvernance du projet, Prometheus a rejoint la Cloud Native Computing Foundation en 2016 en tant que deuxième projet hébergé, après Kubernetes.
+                        Prometheus c'est un outil de monitorage et d'alerte de systèmes Open Source, créée à l'origine par SoundCloud. Depuis sa création en 2012, de nombreuses entreprises et organisations ont adopté Prometheus, et le projet a une communauté de développeurs et d'utilisateurs très active. C'est maintenant un projet Open Source autonome et maintenu indépendamment de toute entreprise. Pour souligner cela, et pour clarifier la structure de gouvernance du projet, Prometheus a rejoint la Cloud Native Computing Foundation en 2016 en tant que deuxième projet hébergé, après Kubernetes.
                         </p>
                         </div>
                         <div class="column is-one-fifth">
