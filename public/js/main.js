@@ -1,56 +1,51 @@
 // progressbar.js@1.0.0 version is used
 // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+
+
+
+//to load the progressebar only one time 
+
 window.onload = function(e) {
 
-    $(document).ready(function() {
+    /**
+     * creer les object de progressebar
+     */
+    var progressebar = progresseBarCercle(container, '#3ADF00');
+    var progressebar2 = progresseBarCercle(container2, '#AEB404');
+    var progressebar3 = progresseBarCercle(container3, '#B22222');
 
-        $(window).on("scroll", function() {
-            changeNavBarColor();
-        });
+    var barArray = [progressebar, progressebar2, progressebar3];
 
-        //to load the progressebar only one time 
-        var porgresseBarUsed = false;
+    /**
+     * set the text style
+     */
+    for (i = 0; i < barArray.length; i++) {
+        barArray[i].text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+        barArray[i].text.style.fontSize = '2rem';
+    }
 
+    /**
+     * pourcentage de progression et interval de lancement 
+     */
 
-        $(window).scroll(function() {
-            var hT = $('#resumer').offset().top,
-                hH = $('#resumer').outerHeight(),
-                wH = $(window).height(),
-                wS = $(this).scrollTop();
-            if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH) && porgresseBarUsed == false) {
+    setInterval(function() { progressebar.animate(0.8); }, 2500);
+    setInterval(function() { progressebar2.animate(0.6); }, 3000);
+    setInterval(function() { progressebar3.animate(0.2); }, 3500);
 
-
-
-                /**
-                 * creer les object de progressebar
-                 */
-                var progressebar = progresseBarCercle(container, '#3ADF00');
-                var progressebar2 = progresseBarCercle(container2, '#AEB404');
-                var progressebar3 = progresseBarCercle(container3, '#B22222');
-
-
-                var barArray = [progressebar, progressebar2, progressebar3];
-
-                /**
-                 * set the text style
-                 */
-                for (i = 0; i < barArray.length; i++) {
-                    barArray[i].text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-                    barArray[i].text.style.fontSize = '2rem';
-                }
-
-                /**
-                 * pourcentage de progression
-                 */
-                progressebar.animate(0.8);
-                progressebar2.animate(0.6);
-                progressebar3.animate(0.2);
-
-                porgresseBarUsed = true;
-            }
-        });
-    });
 }
+
+/**
+ * get the scroll position
+ */
+window.onscroll = function(e) {
+
+    changeNavBarColor();
+
+}
+
+
+
 /**
  * [changeNavBarColor changer background de la bar de navigation]
  * @return {[type]} [no return]
@@ -75,17 +70,18 @@ function changeNavBarColor() {
  */
 function progresseBarCercle(containerBar, color) {
 
-     console.log(color);
+
     return new ProgressBar.Circle(containerBar, {
-        color: '#aaa',
-        // This has to be the same size as the maximum width to
-        // prevent clipping
-        strokeWidth: 4,
-        trailWidth: 1,
-        easing: 'easeInOut',
-        duration: 1400,
-        text: {
-            autoStyleContainer: false
+            color: '#aaa',
+            // This has to be the same size as the maximum width to
+            // prevent clipping
+            strokeWidth: 4,
+            trailWidth: 1,
+            easing: 'easeInOut',
+            duration: 1600,
+            text: {
+                autoStyleContainer: false
+    
         },
         from: {
             color: color,

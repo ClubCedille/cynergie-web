@@ -28,15 +28,16 @@
                         <a class="navbar-item" href="/">
                                     <img src="img/cynergie-logo-white.png"  class="" alt="Logo">
                         </a>
-                        <span class="navbar-burger burger" data-target="navbarMenu">
-                                    <span></span>
+                        <div class="navbar-burger burger" data-target="navbarMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
                         <span></span>
                         <span></span>
-                        </span>
+                        <span></span>
                         </div>
-                        <div id="navbarMenu" class="navbar-menu ">
+                        </div>
+                        
+                        <div id="navbarMenu" class="navbar-menu " >
                         <div class="navbar-end">
-                                    <a href="#" class="navbar-item is-active">
+                                    <a href="#" class="navbar-item ">
                                     Projet
                                     </a>
                                     <a href="#maitrîse" class="navbar-item ">
@@ -85,9 +86,9 @@
             </div>
             </div>
             <div   class="tile is-ancestor">
-            <div class="tile is-4 is-parent">
+            <div class="tile is-4 is-parent ">
                         <div class="tile is-child box">
-                        <div class="content">
+                      
                         <p class="title">
                                     Temps réel
                         </p>
@@ -95,20 +96,18 @@
                                     Récupérer les données de la consommation énergétique de l'ETS en temps réel à partir des contrôleurs connectés aux réseaux 
                                     des différents bâtiments de l'École de technologie supérieure. La récupération des données sera effectuée de façon 
                                     efficace pour que les données puissent être fiables et utilisées par les étudiants, les professeurs et par le public 
-                                    pour de la recherche ou autres.
-                                    <br>
-                                    <br>
+                                    pour de la recherche ou autres.<br>
  
                         </p>
                         <div id="container"></div>
-                        </div>
+                       
  
                         </div>
             </div>
-            <div class="tile is-4 is-parent">
+            <div class="tile is-4 is-parent ">
                         <div class="tile is-child box">
                         <p class="title">
-                        Graphiques et tableaux
+                              Graphiques et tableaux
                         </p>
                         <p  id="tileText" class="content center">
                         Un premier portail est disponible pour la visualisation des données à l’aide de graphiques et de tableaux. Cette plateforme
@@ -116,12 +115,11 @@
                         d’énergie des différents modules de l'École de technologie supérieure. En ce moment ce portail 
                         sera accessible avec une authentification unique pour des raisons de sécurité.
                         </p>
-                        <br>
                         <div id="container2"></div>
  
                         </div>
             </div>
-            <div class="tile is-4 is-parent">
+            <div class="tile is-4 is-parent ">
                         <div class="tile is-child box">
                         <p class="title">
                         Portail et API
@@ -129,11 +127,7 @@
                         <p id="tileText" class="content center">
                         Un deuxième portail Çynergie sera implémenté pour permettre aux étudiants ou aux professeurs de télécharger facilement les données
                         dynamiquement et les exporter en des fichiers CSV ou JSON. De plus une API REST sera disponible pour faciliter l’accès aux données et
-                        permettre à l’utilisateur de les exploiter quel que soit le logiciel qu’il utilise.
-                        <br>
-                        <br>
-                        <br>
-
+                        permettre à l’utilisateur de les exploiter quel que soit le logiciel qu’il utilise.<br>
  
                         </p>
                         <div id="container3"></div>
@@ -372,6 +366,7 @@
             </div>
             </div>
             </footer>
+
 </body>
  
 </html>

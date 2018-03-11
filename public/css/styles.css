@@ -6523,18 +6523,15 @@ label.panel-block {
   font-size: 110%;
   text-align: left;
   color: black;
-  font-family: Lato, sans-serif;
   margin-bottom: 0px;
   padding: 10px 0; }
 
 .title.home {
   text-align: center;
-  font-family: Lato, sans-serif;
   font-size: 3rem; }
 
 .subtitle.home {
   text-align: center;
-  font-family: Lato, sans-serif;
   font-size: 1.5rem; }
 
 .title {
@@ -6546,7 +6543,6 @@ label.panel-block {
   font-size: 128%;
   text-align: left;
   color: black;
-  font-family: Lato, sans-serif;
   margin-bottom: 0px;
   padding: 10px 0; }
 
@@ -6556,7 +6552,6 @@ label.panel-block {
   font-size: 128%;
   text-align: left;
   color: black;
-  font-family: Lato, sans-serif;
   margin-bottom: 0px;
   padding: 10px 0; }
 
@@ -6565,7 +6560,6 @@ label.panel-block {
   background-color: #9E452E;
   font-size: 128%;
   text-align: left;
-  font-family: Lato, sans-serif;
   margin-bottom: 0px;
   padding: 5px 0; }
 
@@ -6577,7 +6571,6 @@ label.panel-block {
   text-align: left;
   color: white;
   font-size: 128%;
-  font-family: Lato, sans-serif;
   margin-bottom: 0px;
   padding: 10px 0; }
 
@@ -6586,12 +6579,13 @@ label.panel-block {
   text-align: left;
   color: white;
   font-size: 128%;
-  font-family: Lato, sans-serif;
   margin-bottom: 0px;
   padding: 10px 0; }
 
 .backgroundHome {
-  background-image: url("../img/graf.jpg"); }
+  background-image: url("../img/graf.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
 
 .Copyleft {
   display: inline-block;
@@ -6605,19 +6599,21 @@ label.panel-block {
   -ms-filter: “FlipH”; }
 
 #container {
-  margin: 20px;
+  margin: auto;
+  margin-top: 25px;
   width: 200px;
   height: 200px;
   position: relative; }
 
 #container2 {
-  margin: 20px;
+  margin: auto;
   width: 200px;
   height: 200px;
   position: relative; }
 
 #container3 {
-  margin: 20px;
+  margin: auto;
+  margin-top: 25px;
   width: 200px;
   height: 200px;
   position: relative; }
@@ -6628,9 +6624,11 @@ label.panel-block {
 .adresse {
   display: inline-block;
   font-size: 150%;
-  font-family: Lato, sans-serif;
   padding: 10px 0;
   text-align: left; }
 
 .container.contact {
   text-align: center; }
+
+.backgroundNavContact {
+  background-image: url("../img/graf.jpg"); }

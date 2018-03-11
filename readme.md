@@ -6,7 +6,7 @@ This website was created to show and explain the Cynergie project.
 
 ## To run with docker 
 
-- `docker run --rm -v $(pwd):/app composer/composer install`
+- `docker run --rm -v $(pwd):/app composer/composer:alpine install`
 
 - `docker-compose up `
 

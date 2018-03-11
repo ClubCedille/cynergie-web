@@ -4,10 +4,14 @@
 @import "../../node_modules/bulma/bulma";
 
 
+
+
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 $cynergie: linear-gradient(to right, #11651F, #0C130E);
 $technologie: linear-gradient(to right, #e6522c, #d8694d);
+
+
 
 
 
@@ -25,6 +29,7 @@ $technologie: linear-gradient(to right, #e6522c, #d8694d);
     background-color: #ffffff;
 }
 
+
 #resumer {
     background-image: url("../img/dust_scratches.png");
 }
@@ -34,33 +39,31 @@ $technologie: linear-gradient(to right, #e6522c, #d8694d);
     font-size: 110%;
     text-align: left;
     color: rgb(0, 0, 0);
-    font-family: Lato, sans-serif;
     margin-bottom: 0px;
     padding: 10px 0;
 }
 
 .title.home {
     text-align: center;
-    font-family: Lato, sans-serif;
     font-size: 3rem;
 }
-.subtitle.home{
+
+.subtitle.home {
     text-align: center;
-    font-family: Lato, sans-serif;
     font-size: 1.5rem;
 }
-.title{
 
-text-align: center;
+.title {
 
+    text-align: center;
 }
+
 .backgroundNode {
     background-image: url("../img/squairy_light.png");
     background-color: #ffffff;
     font-size: 128%;
     text-align: left;
     color: rgb(0, 0, 0);
-    font-family: Lato, sans-serif;
     margin-bottom: 0px;
     padding: 10px 0;
 }
@@ -71,7 +74,6 @@ text-align: center;
     font-size: 128%;
     text-align: left;
     color: rgb(0, 0, 0);
-    font-family: Lato, sans-serif;
     margin-bottom: 0px;
     padding: 10px 0;
 }
@@ -81,7 +83,6 @@ text-align: center;
     background-color: #9E452E;
     font-size: 128%;
     text-align: left;
-    font-family: Lato, sans-serif;
     margin-bottom: 0px;
     padding: 5px 0;
 }
@@ -96,7 +97,6 @@ text-align: center;
     text-align: left;
     color: white;
     font-size: 128%;
-    font-family: Lato, sans-serif;
     margin-bottom: 0px;
     padding: 10px 0;
 }
@@ -106,13 +106,14 @@ text-align: center;
     text-align: left;
     color: white;
     font-size: 128%;
-    font-family: Lato, sans-serif;
     margin-bottom: 0px;
     padding: 10px 0;
 }
 
 .backgroundHome {
     background-image: url("../img/graf.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .Copyleft {
@@ -129,25 +130,29 @@ text-align: center;
 }
 
 #container {
-    margin: 20px;
+    margin: auto;
+    margin-top: 25px;
     width: 200px;
     height: 200px;
     position: relative;
 }
 
 #container2 {
-    margin: 20px;
+    margin: auto;
     width: 200px;
     height: 200px;
     position: relative;
 }
 
 #container3 {
-    margin: 20px;
+    margin: auto;
+    margin-top: 25px;
     width: 200px;
     height: 200px;
     position: relative;
 }
+
+
 
 
 
@@ -159,11 +164,14 @@ text-align: center;
 
     display: inline-block;
     font-size: 150%;
-    font-family: Lato, sans-serif;
     padding: 10px 0;
     text-align: left;
 }
 
 .container.contact {
     text-align: center;
+}
+
+.backgroundNavContact {
+    background-image: url("../img/graf.jpg");
 }

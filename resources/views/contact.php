@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <section class="hero is-success is-medium  backgroundHome">
+    <section class="hero is-success is-medium  backgroundNavContact">
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
@@ -21,11 +21,11 @@
                         <a class="navbar-item" href="/">
               <img src="img/cynergie-logo-white.png" class="" alt="Logo">
             </a>
-                        <span class="navbar-burger burger" data-target="navbarMenu">
-              <span></span>
+                        <div class="navbar-burger burger" data-target="navbarMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
                         <span></span>
                         <span></span>
-                        </span>
+                        <span></span>
+                    </div>
                     </div>
                     <div id="navbarMenu" class="navbar-menu">
                         <div class="navbar-end">
