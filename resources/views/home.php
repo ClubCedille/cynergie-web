@@ -21,7 +21,11 @@
                         <div class="container">
                         <div class="navbar-brand ">
                         <a class="navbar-item" href="/">
-                                    <img src="img/cynergie-logo-white.png"  alt="Logo">
+                                    <picture>
+                                    <source srcset='img/jpeg2000/TypeScript.jp2' type='image/jp2'>
+                                     <img src="img/cynergie-logo-white.png"  alt="Logo">
+                              </picture>
+                                    
                         </a>
                         <div class="navbar-burger burger" data-target="navbarMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
                         <span></span>
@@ -159,7 +163,11 @@
                                     ensuite dans des formats standards et documentés.*
                                     </p>
                                     <h3 class="has-text-white">Architecture du project Çynergie : </h3>
-                                    <img src="img/plateform_generic-page-001.jpg" alt="Architecture image">
+                              
+                                      <picture>
+                                          <source srcset='img/jpeg2000/plateform_generic-page-001.jp2' type='image/jp2'>
+                                          <img src="img/plateform.jpg" alt="Architecture image">
+                                    </picture>
                                     <figcaption class="has-text-white">
                                     * Conception d’un portefeuille de projets exploitant les technologies de l’Internet des Objets pour la gestion des bâtiments
                                     de l’ETS par Gautier COLAJANNI
@@ -185,7 +193,11 @@
                         </div>
                         <div class="column">
                         <a href="https://www.typescriptlang.org/">
-                        <img src="img/TypeScript.png" height="200" width="200" alt="Logo typescript">
+                                <picture>
+                                    <source srcset='img/jpeg2000/TypeScript.jp2' type='image/jp2'>
+                                     <img src="img/TypeScript.png" height="200" width="200" alt="Logo typescript">
+                              </picture>
+                        
                         </a>
                         <br>
                         <a href="https://nodejs.org/en/">
@@ -236,7 +248,7 @@
                                <br>
                               <br>
                               <br>
-                        <img src="https://cdn.shopify.com/s/files/1/1300/8977/products/prometheus_PMS_7417_solid_bkgd_large.png?v=1468329127" height="200"
+                        <img src="img/prometheus_logo.png" height="200"
                                     width="200" alt="Logo prometheus" >
                         </a>
                         </div>
@@ -261,7 +273,11 @@
                         </div>
                         <div class="column ">
                         <a href="https://grafana.com/">
-                        <img src="img/grafana_logo.jpg" height="200" width="200" alt="Logo grafana" >
+                              <picture>
+                                    <source srcset='img/jpeg2000/grafana_logo.jp2' type='image/jp2'>
+                                     <img src="img/grafana_logo.jpg" height="200" width="200" alt="Logo grafana" >
+                              </picture>
+                       
                         </a>
                         </div>
                         <div class="column ">
@@ -284,13 +300,25 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                         <div class="item active">
-                                    <img src="img/grafana1.png" alt="Los Angeles" style="width:100%;">
+
+                              <picture>
+                                    <source srcset='img/jpeg2000/grafana1.jp2' type='image/jp2'>
+                                     <img src="img/grafana1.png" alt="Chicago" style="width:100%;">
+                              </picture>
+                                    
                         </div>
                         <div class="item">
-                                    <img src="img/grafana2.png" alt="Chicago" style="width:100%;">
+                              <picture>
+                                    <source srcset='img/jpeg2000/grafana2.jp2' type='image/jp2'>
+                                     <img src="img/grafana2.png" alt="Chicago" style="width:100%;">
+                              </picture>
+                                    
                         </div>
                         <div class="item">
-                                    <img src="img/grafana3.png" alt="New york" style="width:100%;">
+                              <picture>
+                                    <source srcset='img/jpeg2000/grafana3.jp2' type='image/jp2'>
+                                     <img src="img/grafana2.png" alt="Chicago" style="width:100%;">
+                              </picture>
                         </div>
                         </div>
                         <!-- Left and right controls -->
@@ -316,6 +344,8 @@
                         <div class="column gap">
                         <div class="content center">
                         <a href="https://etsmtl.ca">
+
+            
                                     <img src="img/ets_logo.png" height="200" width="200" alt="Logo ets">
                         </a>
                         </div>
@@ -330,7 +360,12 @@
                         <div class="column">
                         <div class="content center">
                         <a href="https://www.bnc.ca/">
-                                    <img src="img/bnc.jpg" height="400" width="400" alt="Logo banque national">
+
+                              <picture>
+                                    <source type="image/webp" srcset="img/webP/bnc.webp">
+                                     <img src="img/bnc.png" height="400" width="400" alt="Logo banque national">
+                              </picture>
+                                   
                         </a>
                         </div>
                         </div>
