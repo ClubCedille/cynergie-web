@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
  
 <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="web site for the cynergie project"   content="Author: Bengoufa Jalil">
             <title>Cynergie</title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
             <link rel="stylesheet" href="css/styles.css">
             <link rel='shortcut icon' href='http://cedille.etsmtl.ca/favicon.ico' type='image/x-icon' />
-            <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
             <link rel="stylesheet" href="css/animate.css">
-            <link rel="stylesheet" href="css/bootstrap.min.css">
-            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-            <script src="js/main.js"></script>
-            <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
-            <script src="js/jquery-3.3.1.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
+            
+           
 </head>
  
 <body>
-            <section class="hero is-success is-fullheight  backgroundHome">
+            <section  class="hero  is-info is-large is-bold  ">
             <div class="hero-head ">
             <nav class="navbar  is-fixed-top  ">
                         <div class="container">
                         <div class="navbar-brand ">
                         <a class="navbar-item" href="/">
-                                    <img src="img/cynergie-logo-white.png"  class="" alt="Logo">
+                                    <img src="img/cynergie-logo-white.png"  alt="Logo">
                         </a>
                         <div class="navbar-burger burger" data-target="navbarMenu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
                         <span></span>
@@ -35,7 +30,7 @@
                         </div>
                         </div>
                         
-                        <div id="navbarMenu" class="navbar-menu " >
+                        <div id="navbarMenu" class="navbar-menu " onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
                         <div class="navbar-end">
                                     <a href="#" class="navbar-item ">
                                     Projet
@@ -92,7 +87,7 @@
                         <p class="title">
                                     Temps réel
                         </p>
-                        <p id="tileText" class="content center">
+                        <p  id="tileText1" class="content center ">
                                     Récupérer les données de la consommation énergétique de l'ETS en temps réel à partir des contrôleurs connectés aux réseaux 
                                     des différents bâtiments de l'École de technologie supérieure. La récupération des données sera effectuée de façon 
                                     efficace pour que les données puissent être fiables et utilisées par les étudiants, les professeurs et par le public 
@@ -109,7 +104,7 @@
                         <p class="title">
                               Graphiques et tableaux
                         </p>
-                        <p  id="tileText" class="content center">
+                        <p  id="tileText2" class="content center ">
                         Un premier portail est disponible pour la visualisation des données à l’aide de graphiques et de tableaux. Cette plateforme
                         se nommant Grafana, le project Çynergie l’utilise pour pour afficher des graphiques et des tableaux qui illustrent la consommation
                         d’énergie des différents modules de l'École de technologie supérieure. En ce moment ce portail 
@@ -124,7 +119,7 @@
                         <p class="title">
                         Portail et API
                         </p>
-                        <p id="tileText" class="content center">
+                        <p id="tileText3"  class="content center ">
                         Un deuxième portail Çynergie sera implémenté pour permettre aux étudiants ou aux professeurs de télécharger facilement les données
                         dynamiquement et les exporter en des fichiers CSV ou JSON. De plus une API REST sera disponible pour faciliter l’accès aux données et
                         permettre à l’utilisateur de les exploiter quel que soit le logiciel qu’il utilise.<br>
@@ -164,7 +159,7 @@
                                     ensuite dans des formats standards et documentés.*
                                     </p>
                                     <h3 class="has-text-white">Architecture du project Çynergie : </h3>
-                                    <img src="img/plateform_generic-page-001.jpg">
+                                    <img src="img/plateform_generic-page-001.jpg" alt="Architecture image">
                                     <figcaption class="has-text-white">
                                     * Conception d’un portefeuille de projets exploitant les technologies de l’Internet des Objets pour la gestion des bâtiments
                                     de l’ETS par Gautier COLAJANNI
@@ -190,11 +185,11 @@
                         </div>
                         <div class="column">
                         <a href="https://www.typescriptlang.org/">
-                        <img src="img/TypeScript.png" height="200" width="200">
+                        <img src="img/TypeScript.png" height="200" width="200" alt="Logo typescript">
                         </a>
                         <br>
                         <a href="https://nodejs.org/en/">
-                        <img src="img/nodejs.png" height="200" width="200">
+                        <img src="img/nodejs.png" height="200" width="200" alt="Logo nodejs" >
                         </a>
                         </div>
                         <div class="column">
@@ -216,7 +211,7 @@
                         </div>
                         <div class="column">
                         <a href="http://searchmicroservices.techtarget.com/definition/RESTful-API">
-                        <img src="https://www.odoo.com/apps/icon_image?module_id=19345" height="200" width="200">
+                        <img src="https://www.odoo.com/apps/icon_image?module_id=19345" height="200" width="200" alt="Logo api" >
                         </a>
                         </div>
                         <div class="column">
@@ -242,7 +237,7 @@
                               <br>
                               <br>
                         <img src="https://cdn.shopify.com/s/files/1/1300/8977/products/prometheus_PMS_7417_solid_bkgd_large.png?v=1468329127" height="200"
-                                    width="200" >
+                                    width="200" alt="Logo prometheus" >
                         </a>
                         </div>
                         <div class="column ">
@@ -266,7 +261,7 @@
                         </div>
                         <div class="column ">
                         <a href="https://grafana.com/">
-                        <img src="img/grafana_logo.jpg" height="200" width="200">
+                        <img src="img/grafana_logo.jpg" height="200" width="200" alt="Logo grafana" >
                         </a>
                         </div>
                         <div class="column ">
@@ -321,21 +316,21 @@
                         <div class="column gap">
                         <div class="content center">
                         <a href="https://etsmtl.ca">
-                                    <img src="img/ets_logo.png" height="200" width="200">
+                                    <img src="img/ets_logo.png" height="200" width="200" alt="Logo ets">
                         </a>
                         </div>
                         </div>
                         <div class="column">
                         <div class="content center">
                         <a href="https://cedille.etsmtl.ca">
-                                    <img src="img/cedille-logo.png" height="200" width="200">
+                                    <img src="img/cedille-logo.png" height="200" width="200" alt="Logo cedille">
                         </a>
                         </div>
                         </div>
                         <div class="column">
                         <div class="content center">
                         <a href="https://www.bnc.ca/">
-                                    <img src="img/bnc.jpg" height="400" width="400">
+                                    <img src="img/bnc.jpg" height="400" width="400" alt="Logo banque national">
                         </a>
                         </div>
                         </div>
@@ -366,6 +361,13 @@
             </div>
             </div>
             </footer>
+            mongrad
+            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <script src="js/main.js" async></script>
+            <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js" async></script>
+            <script src="js/jquery-3.3.1.min.js" ></script>
+            <script src="js/bootstrap.min.js" async></script>
 
 </body>
  

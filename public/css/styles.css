@@ -6519,7 +6519,21 @@ label.panel-block {
 #resumer {
   background-image: url("../img/dust_scratches.png"); }
 
-#tileText {
+#tileText1 {
+  font-size: 110%;
+  text-align: left;
+  color: black;
+  margin-bottom: 0px;
+  padding: 10px 0; }
+
+#tileText2 {
+  font-size: 110%;
+  text-align: left;
+  color: black;
+  margin-bottom: 0px;
+  padding: 10px 0; }
+
+#tileText3 {
   font-size: 110%;
   text-align: left;
   color: black;
@@ -6575,17 +6589,21 @@ label.panel-block {
   padding: 10px 0; }
 
 .mongrad {
-  background: linear-gradient(to right, #11651F, #0C130E);
+  background: linear-gradient(141deg, #11651F 0%, #209cee 71%, #3287f5 100%);
   text-align: left;
   color: white;
   font-size: 128%;
   margin-bottom: 0px;
   padding: 10px 0; }
 
-.backgroundHome {
-  background-image: url("../img/graf.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
+.hero.is-info.is-bold {
+  background-image: linear-gradient(141deg, #11651F 0%, #209cee 71%, #3287f5 100%); }
+
+.hero.is-info a.navbar-item:hover, .hero.is-info a.navbar-item.is-active,
+.hero.is-info .navbar-link:hover,
+.hero.is-info .navbar-link.is-active {
+  background-color: #11651F;
+  color: #fff; }
 
 .Copyleft {
   display: inline-block;
@@ -6623,12 +6641,9 @@ label.panel-block {
  */
 .adresse {
   display: inline-block;
-  font-size: 150%;
+  font-size: 140%;
   padding: 10px 0;
   text-align: left; }
 
 .container.contact {
   text-align: center; }
-
-.backgroundNavContact {
-  background-image: url("../img/graf.jpg"); }

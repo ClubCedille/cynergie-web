@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <section class="hero is-success is-medium  backgroundNavContact">
+    <section class="hero is-info is-medium is-bold  ">
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
@@ -27,7 +27,7 @@
                         <span></span>
                     </div>
                     </div>
-                    <div id="navbarMenu" class="navbar-menu">
+                    <div id="navbarMenu" class="navbar-menu" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
                         <div class="navbar-end">
                             <a href="/" class="navbar-item ">
                                 Projet
@@ -41,7 +41,7 @@
                             <a href="/#partenaires" class="navbar-item ">
                                 Partenaires
                             </a>
-                            <a class="navbar-item is-active" href="contact">
+                            <a class="navbar-item " href="contact">
                                 Contact
                             </a>
                             <span class="navbar-item">
