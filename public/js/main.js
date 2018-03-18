@@ -5,19 +5,20 @@ window.onload = function(e) {
 
     //to load the progressebar only one time 
     var porgresseBarUsed = false;
+    var scrollTimeout;
 
 
     /**
      * animate pourcentage a la bonne hauteur
      */
-    var readSpeed = window.requestAnimationFrame ||
+    /*  var readSpeed = window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
         window.mozRequestAnimationFrame ||
         window.msRequestAnimationFrame ||
         window.oRequestAnimationFrame;
     var $window = $(window);
     var lastScrollTop = $window.scrollTop();
-
+*/
 
 
     if ($(window).width() <= 600) {
@@ -47,37 +48,25 @@ window.onload = function(e) {
         progressebar3.animate(0.2);
 
 
-    } else if (readSpeed) {
+    } else {
+        $(window).scroll(function() {
+            if (scrollTimeout) {
+                // clear the timeout, if one is pending
+                clearTimeout(scrollTimeout);
+                scrollTimeout = null;
+            }
+            scrollTimeout = setTimeout(scrollHandler, 5);
+        });
 
-        loop();
+
+
     }
 
 
 
-    /**
-     * [loop reguler l appelle a la function deplacement lorsqu on scroll]
-     */
-    function loop() {
-        var scrollTop = $window.scrollTop();
-        if (lastScrollTop === scrollTop) {
-            readSpeed(loop);
-            return;
-        } else {
-            lastScrollTop = scrollTop;
-
-            // fire scroll function if scrolls vertically
-            deplamentScroll();
-            readSpeed(loop);
-        }
-    }
 
 
-
-    /**
-     * [deplamentScroll quand le scroll du site est deplacer]
-     */
-    var deplamentScroll = function() {
-
+    scrollHandler = function() {
 
         /**
          * change navbar color onscroll
@@ -92,7 +81,9 @@ window.onload = function(e) {
 
 
 
-        if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH) && porgresseBarUsed == false) {
+
+        if (wS > 300 && porgresseBarUsed == false) {
+
 
 
             /**
@@ -122,7 +113,9 @@ window.onload = function(e) {
 
             porgresseBarUsed = true;
         }
-    }
+
+    };
+
 
 }
 

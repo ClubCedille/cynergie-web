@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="manifest" href="/manifest.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style-min.css">
     <link rel='shortcut icon' href="img/cynergie-logo-white.ico" type='image/x-icon' />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
@@ -73,7 +72,7 @@
             </address>
         </div>
         <section class="section is-small ">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.9302763822852!2d-73.5649800972535!3d45.49472019086769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure+%C3%89TS!5e0!3m2!1sen!2sca!4v1518919044091" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.9302763822852!2d-73.5649800972535!3d45.49472019086769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure+%C3%89TS!5e0!3m2!1sen!2sca!4v1518919044091" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen title="googlemap"></iframe>
         </section>
     </section>
     <footer class="footer">
@@ -99,6 +98,8 @@
             </div>
         </div>
     </footer>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </body>
 
 </html>

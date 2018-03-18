@@ -5,13 +5,11 @@
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta name="web site for the cynergie project"   content="Author: Bengoufa Jalil">
+            <link rel="manifest" href="/manifest.webmanifest">
             <title>Cynergie</title>
-            <link rel="stylesheet" href="css/styles.css">
+            <link rel="stylesheet" href="css/style-min.css" media="screen" >
             <link rel='shortcut icon' href='http://cedille.etsmtl.ca/favicon.ico' type='image/x-icon' />
-            <link rel="stylesheet" href="css/animate.css">
-            
-           
+            <link rel="stylesheet" href="css/animate-min.css" media="screen" >
 </head>
  
 <body>
@@ -165,6 +163,7 @@
                                     <h3 class="has-text-white">Architecture du project Çynergie : </h3>
                               
                                       <picture>
+                                          <source type="image/webp" srcset="img/webP/plateform.webp">
                                           <source srcset='img/jpeg2000/plateform_generic-page-001.jp2' type='image/jp2'>
                                           <img src="img/plateform.jpg" alt="Architecture image">
                                     </picture>
@@ -274,6 +273,7 @@
                         <div class="column ">
                         <a href="https://grafana.com/">
                               <picture>
+                                    <source type="image/webp" srcset="img/webP/grafana.webp">
                                     <source srcset='img/jpeg2000/grafana_logo.jp2' type='image/jp2'>
                                      <img src="img/grafana_logo.jpg" height="200" width="200" alt="Logo grafana" >
                               </picture>
@@ -302,6 +302,7 @@
                         <div class="item active">
 
                               <picture>
+                                    <source type="image/webp" srcset="img/webP/grafana1.webp">
                                     <source srcset='img/jpeg2000/grafana1.jp2' type='image/jp2'>
                                      <img src="img/grafana1.png" alt="Chicago" style="width:100%;">
                               </picture>
@@ -309,6 +310,7 @@
                         </div>
                         <div class="item">
                               <picture>
+                                    <source type="image/webp" srcset="img/webP/grafana2.webp">
                                     <source srcset='img/jpeg2000/grafana2.jp2' type='image/jp2'>
                                      <img src="img/grafana2.png" alt="Chicago" style="width:100%;">
                               </picture>
@@ -316,6 +318,7 @@
                         </div>
                         <div class="item">
                               <picture>
+                                    <source type="image/webp" srcset="img/webP/grafana3.webp">
                                     <source srcset='img/jpeg2000/grafana3.jp2' type='image/jp2'>
                                      <img src="img/grafana2.png" alt="Chicago" style="width:100%;">
                               </picture>
@@ -353,7 +356,10 @@
                         <div class="column">
                         <div class="content center">
                         <a href="https://cedille.etsmtl.ca">
+                              <picture>
+                                    <source type="image/jp2" srcset="img/jpeg2000/cedille-logo.jp2">
                                     <img src="img/cedille-logo.png" height="200" width="200" alt="Logo cedille">
+                              </picture>
                         </a>
                         </div>
                         </div>
@@ -363,7 +369,7 @@
 
                               <picture>
                                     <source type="image/webp" srcset="img/webP/bnc.webp">
-                                     <img src="img/bnc.png" height="400" width="400" alt="Logo banque national">
+                                    <img src="img/bnc.jpg" height="400" width="400" alt="Logo banque national">
                               </picture>
                                    
                         </a>
@@ -379,16 +385,16 @@
                         <div class="content is-offset-2 center">
                         <p class="has-text-centered"> Copyleft
                                     <span class="Copyleft">©</span> Club Cedille</p>
-                        <a class="button is-link is-outlined" href="https://www.facebook.com/clubcedille">
+                        <a class="button is-link is-outlined" href="https://www.facebook.com/clubcedille" >
                                     <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="button is-link is-outlined" href="#">
+                        <a class="button is-link is-outlined" href="/contact" alt="cynergie">
                                     <i class="far fa-envelope"></i>
                         </a>
-                        <a class="button is-link is-outlined" href="https://github.com/ClubCedille?utf8=%E2%9C%93&q=cynergie&type=&language=">
+                        <a class="button is-link is-outlined" href="https://github.com/ClubCedille?utf8=%E2%9C%93&q=cynergie&type=&language=" >
                                     <i class="fab fa-github"></i>
                         </a>
-                        <a class="button is-link is-outlined" href="https://www.linkedin.com/company/cedille">
+                        <a class="button is-link is-outlined" href="https://www.linkedin.com/company/cedille" >
                                     <i class="fab fa-linkedin"></i>
                         </a>
                         </div>
@@ -396,11 +402,11 @@
             </div>
             </div>
             </footer>
-            mongrad
+           
             <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" >
             <script src="js/main.js" async></script>
-            <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js" async></script>
+            <script src="js/progressbar.js" ></script>
             <script src="js/jquery-3.3.1.min.js" ></script>
             <script src="js/bootstrap.min.js" async></script>
 

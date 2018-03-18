@@ -6519,6 +6519,9 @@ label.panel-block {
 #resumer {
   background-image: url("../img/dust_scratches.png"); }
 
+#resumer {
+  background-image: url("../img/webP/dust_scratches.webp"); }
+
 #tileText1 {
   font-size: 110%;
   text-align: left;

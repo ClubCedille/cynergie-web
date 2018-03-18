@@ -1,0 +1,11 @@
+{
+  "name": "cynergie",
+  "short_name": "Cyng",
+  "start_url": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "theme_color": "aliceblue",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Project cynergie par Cedille"
+}
