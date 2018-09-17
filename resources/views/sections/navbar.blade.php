@@ -41,8 +41,8 @@
                         @auth
                             <a class="navbar-item" href="/home">Home</a>
                         @else
-                            <a class="navbar-item" href="{{ route('login') }}">Login</a>
-                            <a class="navbar-item" href="{{ route('register') }}">Register</a>
+                            <a class="navbar-item" href="/login">Login</a>
+                            <a class="navbar-item" href="/register">Register</a>
 
                         @endauth
 
