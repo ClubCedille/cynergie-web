@@ -22,10 +22,30 @@ mv .env.example .env
 ```
 docker-compose build
 ```
-- run the containers by default the website is binded to `localhost:8000`
+or 
+
+```
+docker-compose up --build -d
+```
+- run the containers by default the website is binded to `localhost:4000`
 
 ```
 docker-compose up -d
+```
+
+- run migration inside cynergieportail container
+
+```
+docker exec -it cynergieportail bash
+```
+```
+php artisan migrate
+```
+
+- run seeder inside cynergieportail container
+
+```
+php artisan db:seed
 ```
 
 #### Help

@@ -10,7 +10,7 @@ use App\Helpers\Filter;
 
 class DataController extends Controller
 {
-    private $prometheusUrl = "192.168.0.1:9090/api/v1/";
+    private $prometheusUrl = "172.17.0.1:9090/api/v1/";
 
     /**
      * @param Request $request
@@ -49,7 +49,6 @@ class DataController extends Controller
         return response()->json("bad parameters , verify and try again", 400);
 
     }
-
 
     /**
      * @return string list of all controllers names

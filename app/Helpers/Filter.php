@@ -10,15 +10,11 @@ use Illuminate\Http\Request;
 class Filter
 {
 
-
     public static function getDataDay($dataDay, $client,$url)
     {
-
-        $prometheusData = $client->get($url+"query_range?query=&start="+$dataDay+"T00:00:00.781Z&end="+$dataDay+"T23:59:59.781Z&step=1m");
+        $prometheusData = $client->get($url+"query_range?query=DEMO_kW_tot&start="+$dataDay+"T00:00:00.781Z&end="+$dataDay+"T23:59:59.781Z&step=1m");
         $prometheusJson = $prometheusData->getBody()->getContents();
         $metrics = array();
- /*       $requestJson = Request::create(route("prometheus"), "GET");
-        $prometheusJson = app()->handle($requestJson)->getContent();*/
         $prometheusArray = json_decode($prometheusJson);
 
         foreach ($prometheusArray->data->result as $result) {
@@ -46,9 +42,6 @@ class Filter
 
     public static function getDataMultipleDays($dataMultipleDays, $client)
     {
-
-        //$prometheusData = $client->get($this->prometheusUrl);
-        //dd($prometheusData->getBody()->getContents());
 
         $metrics = array();
         $requestJson = Request::create(route("prometheus"), "GET");
