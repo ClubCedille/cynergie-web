@@ -24,28 +24,5 @@
             <div class="column is-one-fifth">
             </div>
         </div>
-        <b-carousel id="carousel1"
-                    style="text-shadow: 1px 1px 2px #333;"
-                    controls
-                    indicators
-                    :interval="3000"
-                    img-width="200"
-                    img-height="480"
-        >
-
-            <!-- Text slides with image -->
-            <b-carousel-slide img-src="img/grafana1.png">
-
-            </b-carousel-slide>
-
-            <!-- Slides with custom text -->
-            <b-carousel-slide img-src="img/grafana2.png">
-            </b-carousel-slide>
-
-            <!-- Slides with image only -->
-            <b-carousel-slide img-src="img/grafana3.png">
-            </b-carousel-slide>
-
-        </b-carousel>
     </section>
 </div>
