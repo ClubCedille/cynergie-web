@@ -27,7 +27,7 @@ window.onload = function(e) {
          */
         var progressebar = progresseBarCercle(container, '#3ADF00');
         var progressebar2 = progresseBarCercle(container2, '#AEB404');
-        var progressebar3 = progresseBarCercle(container3, '#B22222');
+        var progressebar3 = progresseBarCercle(container3, '#3f85f4');
 
 
         var barArray = [progressebar, progressebar2, progressebar3];
@@ -43,9 +43,9 @@ window.onload = function(e) {
         /**
          * pourcentage de progression
          */
-        progressebar.animate(0.8);
+        progressebar.animate(0.9);
         progressebar2.animate(0.7);
-        progressebar3.animate(0.5);
+        progressebar3.animate(0.8);
 
 
     } else {
@@ -91,7 +91,7 @@ window.onload = function(e) {
              */
             var progressebar = progresseBarCercle(container, '#3ADF00');
             var progressebar2 = progresseBarCercle(container2, '#AEB404');
-            var progressebar3 = progresseBarCercle(container3, '#B22222');
+            var progressebar3 = progresseBarCercle(container3, '#3f85f4');
 
 
             var barArray = [progressebar, progressebar2, progressebar3];
@@ -107,9 +107,9 @@ window.onload = function(e) {
             /**
              * pourcentage de progression
              */
-            progressebar.animate(0.8);
-            progressebar2.animate(0.6);
-            progressebar3.animate(0.2);
+            progressebar.animate(0.9);
+            progressebar2.animate(0.7);
+            progressebar3.animate(0.8);
 
             porgresseBarUsed = true;
         }
